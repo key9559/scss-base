@@ -51,6 +51,7 @@
     left: 0px;
     width: 100%;
     height: 50px;
+    z-index: z(fixed);
     .btn {
       width: 100%;
       height: 100%;
@@ -65,20 +66,22 @@
     left: 0px;
     width: 100%;
     height: 50px;
+    z-index: z(fixed);
     .btn {
       width: 50%;
+      height: 100%;
     }
   }
 }
 // 버튼 높이
-// ex: .btn-ht-small .btn-ht-large ...
+// ex: .btn-ht-sm .btn-ht-lg ...
 @each $name, $height in $btn-height {
   .btn-ht-#{$name} {
     height: $height + px;
   }
 }
 // 버튼 위드
-// ex: .btn-wi-small .btn-wi-large ...
+// ex: .btn-wi-sm .btn-wi-lg ...
 @each $name, $width in $btn-width {
   .btn-wi-#{$name} {
     width: $width + px;
@@ -100,7 +103,7 @@
     color: $color;
   }
 }
-// 고스트 버튼 색(배경색을 받아옴)
+// 고스트 버튼 색(배경색을 상속받아옴)
 // ex: .btn-gst-main .btn-gst-sub ...
 @each $name, $color in $btn-color {
   .btn-gst-#{$name} {

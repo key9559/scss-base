@@ -3,6 +3,6 @@
   @return map-get($main-color, $color);
 }
 // zIndex(zero);
-@function zIndex($layer) {
+@function z($layer) {
   @return map-get($z-index, $layer);
 }
