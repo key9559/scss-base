@@ -365,9 +365,9 @@ table {
   일부만 추가 되나
 */
 .main {
-  color: color(main);
+  color: #000;
 }
 
 .sub {
-  color: color(sub);
+  color: #333;
 }
