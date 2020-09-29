@@ -1,0 +1,10 @@
+// 줄이 넘으면 ...
+@mixin ellipse($line, $line-height) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  line-height: $line-height;
+}

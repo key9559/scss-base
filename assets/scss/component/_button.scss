@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@each $name, $height in $btn-height {
+  .btn-ht-#{$name} {
+    height: $height + px;
+  }
+}
+
+@each $name, $color in $main-color {
+  .btn-bd-#{$name} {
+    border: 1px solid $color;
+    background-color: white;
+    color: $color;
+  }
+}
+/*
+
+*/
+// 일부만 추가 되나
+@each $name, $color in $btn-color {
+  .#{$name} {
+    color: $color;
+  }
+}

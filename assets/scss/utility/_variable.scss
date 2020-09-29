@@ -1,0 +1,35 @@
+$main-color: (
+  main: #000,
+  sub: #333,
+  highlight: #666,
+  light-text: #999,
+  text: #161616,
+  dark-text: #aaa,
+);
+
+$z-index: (
+  popup: 100,
+  fixed: 20,
+  header: 10,
+  double: 2,
+  default: 1,
+  zero: 0,
+  minus: -1,
+);
+
+// button & badge
+$btn-height: (
+  small: 30,
+  regular: 50,
+  large: 60,
+);
+
+$socail: (
+  kakao: #fae300,
+);
+
+// main color 중에서도 일부만 버튼에 쓰고 싶을때?
+$btn-color: (
+  main: #{color(main)},
+  sub: color(sub),
+);

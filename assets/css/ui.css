@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*일부추가되나*/
 html,
 body,
 a,
@@ -293,4 +295,80 @@ table {
   color: #161616;
   letter-spacing: -0.04em;
   stroke-width: 0px;
+}
+
+.test {
+  color: #333;
+  z-index: 2;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-ht-small {
+  height: 30px;
+}
+
+.btn-ht-regular {
+  height: 50px;
+}
+
+.btn-ht-large {
+  height: 60px;
+}
+
+.btn-bd-main {
+  border: 1px solid #000;
+  background-color: white;
+  color: #000;
+}
+
+.btn-bd-sub {
+  border: 1px solid #333;
+  background-color: white;
+  color: #333;
+}
+
+.btn-bd-highlight {
+  border: 1px solid #666;
+  background-color: white;
+  color: #666;
+}
+
+.btn-bd-light-text {
+  border: 1px solid #999;
+  background-color: white;
+  color: #999;
+}
+
+.btn-bd-text {
+  border: 1px solid #161616;
+  background-color: white;
+  color: #161616;
+}
+
+.btn-bd-dark-text {
+  border: 1px solid #aaa;
+  background-color: white;
+  color: #aaa;
+}
+
+/*
+
+*/
+.main {
+  color: color(main);
+}
+
+.sub {
+  color: color(sub);
 }
