@@ -341,13 +341,29 @@ table {
      object-fit: cover;
 }
 
+.respon-img__box {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.respon-img__box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .clear:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.fiex-wrap {
+.flex-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +375,7 @@ table {
           align-items: center;
 }
 
-.fiex-wrap--left {
+.flex-wrap--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,7 +387,7 @@ table {
           align-items: center;
 }
 
-.fiex-wrap--center {
+.flex-wrap--center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,7 +399,19 @@ table {
           align-items: center;
 }
 
-.fiex-wrap--vertical {
+.flex-wrap--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap--vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,18 +427,22 @@ table {
           flex-direction: column;
 }
 
+.scroll-custom {
+  overflow: scroll;
+}
+
 .scroll-custom::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 .scroll-custom::-webkit-scrollbar-thumb {
-  color: #000;
+  background-color: #666;
 }
 
 html.ie .scroll-custom {
-  scrollbar-arrow-color: #000;
-  scrollbar-face-color: #000;
-  scrollbar-track-color: #333;
+  scrollbar-arrow-color: #333;
+  scrollbar-face-color: #333;
+  scrollbar-track-color: #666;
 }
 
 .btn {
@@ -423,29 +455,12 @@ html.ie .scroll-custom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .btn.is-disabled {
   background-color: gray;
-}
-
-.btn-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.btn-round {
-  border-radius: 25px;
-}
-
-.btn-rounded {
-  border-radius: 8px;
-}
-
-.btn-shadow {
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
+  cursor: default;
 }
 
 .btn-wrap {
@@ -523,6 +538,25 @@ html.ie .scroll-custom {
   height: 100%;
 }
 
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.btn-round {
+  border-radius: 25px;
+}
+
+.btn-rounded {
+  border-radius: 8px;
+}
+
+.btn-shadow {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
 .btn-ht-sm {
   height: 30px;
 }
@@ -548,33 +582,33 @@ html.ie .scroll-custom {
 }
 
 .btn-main {
-  background-color: #000;
-}
-
-.btn-sub {
   background-color: #333;
 }
 
+.btn-sub {
+  background-color: #666;
+}
+
 .btn-bd-main {
-  border: 1px solid #000;
+  border: 1px solid #333;
   background-color: white;
-  color: #000;
+  color: #333;
 }
 
 .btn-bd-sub {
-  border: 1px solid #333;
+  border: 1px solid #666;
   background-color: white;
-  color: #333;
+  color: #666;
 }
 
 .btn-gst-main {
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #333;
+  color: #333;
 }
 
 .btn-gst-sub {
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid #666;
+  color: #666;
 }
 
 .btn-kakao {
@@ -589,6 +623,10 @@ html.ie .scroll-custom {
   background-color: #00bf19;
 }
 
+.input-wrap {
+  width: 100%;
+}
+
 .l-center {
   max-width: 1080px;
   width: 95%;
@@ -597,13 +635,14 @@ html.ie .scroll-custom {
 
 .empty-content {
   width: 100%;
+  text-align: center;
+  padding: 50px 0px;
 }
 
 .empty-content__img-box {
   width: 100px;
   margin: 0px auto;
-  padding: 50px 0px 10px;
-  text-align: center;
+  padding-bottom: 20px;
 }
 
 .empty-content__img-box img {

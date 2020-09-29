@@ -2,30 +2,12 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   &.is-disabled {
     background-color: gray;
+    cursor: default;
   }
-  // button style
-  // ex: .btn-circle .btn-rounded .btn-shadow ...
-  &-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  &-round {
-    border-radius: 25px;
-  }
-  &-rounded {
-    border-radius: 8px;
-  }
-  &-shadow {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
-  }
-  // &gradi {
-  // gradiant 생성하는 믹스인을 받아옴.
-  // }
-  // 버튼은 무조건 btn-wrap안쪽에 위치
-  // ex: .btn-wrap .btn-fixed-wrap btn-double-wrap ...
+  // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
   &-wrap {
     display: flex;
   }
@@ -72,30 +54,44 @@
       height: 100%;
     }
   }
+  // button style
+  &-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  &-round {
+    border-radius: 25px;
+  }
+  &-rounded {
+    border-radius: 8px;
+  }
+  &-shadow {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  // &gradi {
+  // gradiant 생성하는 믹스인을 받아옴.
+  // }
 }
 // 버튼 높이
-// ex: .btn-ht-sm .btn-ht-lg ...
 @each $name, $height in $btn-height {
   .btn-ht-#{$name} {
     height: $height + px;
   }
 }
 // 버튼 위드
-// ex: .btn-wi-sm .btn-wi-lg ...
 @each $name, $width in $btn-width {
   .btn-wi-#{$name} {
     width: $width + px;
   }
 }
 // 버튼 색
-// ex: .btn-main .btn-sub ...
 @each $name, $color in $btn-color {
   .btn-#{$name} {
     background-color: $color;
   }
 }
 // 라인 버튼 색
-// ex: .btn-bd-main .btn-bd-sub ...
 @each $name, $color in $btn-color {
   .btn-bd-#{$name} {
     border: 1px solid $color;
@@ -104,7 +100,6 @@
   }
 }
 // 고스트 버튼 색(배경색을 상속받아옴)
-// ex: .btn-gst-main .btn-gst-sub ...
 @each $name, $color in $btn-color {
   .btn-gst-#{$name} {
     border: 1px solid $color;
@@ -112,7 +107,6 @@
   }
 }
 // 소셜 버튼
-// ex: .btn-kakao .btn-facebook ...
 @each $name, $color in $socail {
   .btn-#{$name} {
     background-color: $color;

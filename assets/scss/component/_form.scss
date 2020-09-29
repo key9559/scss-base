@@ -1,0 +1,7 @@
+.input {
+  // input은 무조건 input-wrap안에 사용
+  &-wrap {
+    width: 100%;
+  }
+}
+// input text, textarea select base style
