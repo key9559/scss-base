@@ -19,17 +19,25 @@ $z-index: (
 
 // button & badge
 $btn-height: (
-  small: 30,
-  regular: 50,
-  large: 60,
+  sm: 30,
+  md: 50,
+  lg: 60,
+);
+
+$btn-width: (
+  sm: 100,
+  md: 150,
+  lg: 200,
+);
+
+$btn-color: (
+  main: #{color(main)},
+  sub: color(sub),
 );
 
 $socail: (
   kakao: #fae300,
-);
-
-// main color 중에서도 일부만 버튼에 쓰고 싶을때?
-$btn-color: (
-  main: #{color(main)},
-  sub: color(sub),
+  facebook: #204889,
+  naver: #00bf19,
+  twitter: #228cce,
 );
