@@ -1,7 +1,7 @@
 # scss-base
 
-##광범위하게 사용가능한 scss base 제작
-###base
+## 광범위하게 사용가능한 scss base 제작
+### base
 ```
   -base
     =reset custom...
@@ -10,28 +10,28 @@
   -typo
     =font-face...
 ```
-###component
+### component
 ```
   -component styles
     =card, list, input, animation...
 ```
-###layout
+### layout
 ```
   -layout styles
     haeder, footer, l-~...
 ```
-###page
+### page
 ```
   -page contant styles
     =main, cs, auth, enroll, mypage...
 ```
-###utility
+### utility
 ```
   -variable
   -mixin
   -function
 ```
-###vendor
+### vendor
 ```
   -output styles
     =reset, normalise, slick, swiper...
