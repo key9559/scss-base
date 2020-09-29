@@ -145,9 +145,11 @@ wbr {
 }
 html {
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 }
 a {
   outline: 0px none;
+  background-color: transparent;
   text: {
     decoration: none;
   }
