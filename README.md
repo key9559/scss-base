@@ -10,7 +10,7 @@
     기본적인 reset 추가
   -helper
     =common class
-    자주쓰이는 class 추가(예정)
+    자주쓰이는 class 추가
   -typo
     =font-face...
     폰트 설정과 관련된 부분 추가
@@ -30,7 +30,7 @@
 ```
   -layout styles
     haeder, footer, l-~...
-    layout.scss 추가(예정)
+    layout.scss 추가
     이외의 header 등의 레이아웃은 프로젝트별 상이하기에 추가하지 않음
 ```
 
