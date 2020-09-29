@@ -135,9 +135,9 @@ use,
 video,
 view,
 wbr {
-  margin: 0px;
-  padding: 0px;
-  border: 0px none;
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
   line-height: 1.2;
   vertical-align: baseline;
@@ -148,7 +148,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 a {
-  outline: 0px none;
+  outline: 0;
   background-color: transparent;
   text: {
     decoration: none;
@@ -166,8 +166,8 @@ select,
 input,
 textarea {
   box-shadow: none;
-  border-radius: 0px;
-  outline: 0px none;
+  border-radius: 0;
+  outline: 0;
   background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -176,6 +176,10 @@ textarea {
 }
 select {
   padding: 5px 10px;
+}
+/* ie 화살표 제거 */
+select::-ms-expand {
+  display: none;
 }
 address {
   font-style: normal;
