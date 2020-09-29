@@ -2,6 +2,9 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  &.is-disabled {
+    background-color: gray;
+  }
   // button style
   // ex: .btn-circle .btn-rounded .btn-shadow ...
   &-circle {

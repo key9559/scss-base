@@ -1,4 +1,86 @@
-.test {
-  color: color(sub);
-  z-index: zIndex(double);
+// 브라우저 크기별 레이아웃 보이기
+.is-tab-show {
+  display: none;
+}
+.is-mo-show {
+  display: none;
+}
+.is-mo-sm-show {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  // 혹은 900px
+  .is-tab-show {
+    display: block;
+  }
+  .is-tab-hide {
+    display: none;
+  }
+}
+@media all and (max-width: 630px) {
+  // 혹은 600px
+  .is-mo-show {
+    display: block;
+  }
+  .is-mo-hide {
+    display: none;
+  }
+}
+@media all and (max-width: 320px) {
+  .is-mo-sm-show {
+    display: block;
+  }
+  .is-mo-sm-hide {
+    display: none;
+  }
+}
+// common
+.img-box {
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// flexible content wrap
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fiex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+// scroll custom
+.scroll-custom {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    color: color(main);
+  }
+  @at-root html.ie & {
+    scrollbar-arrow-color: color(main);
+    scrollbar-face-color: color(main);
+    scrollbar-track-color: color(sub);
+  }
 }

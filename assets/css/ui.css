@@ -295,10 +295,40 @@ table {
   stroke-width: 0px;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.fiex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fiex-wrap--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fiex-wrap--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -307,163 +337,87 @@ table {
           align-items: center;
 }
 
-.btn-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.btn-round {
-  border-radius: 25px;
-}
-
-.btn-rounded {
-  border-radius: 8px;
-}
-
-.btn-shadow {
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.07);
-}
-
-.btn-wrap {
+.fiex-wrap--vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.btn-double-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.btn-double-wrap .btn {
-  width: 50%;
+.scroll-custom::-webkit-scrollbar {
+  width: 6px;
 }
 
-.btn-double-side-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.btn-double-side-wrap .btn {
-  width: 48%;
-}
-
-.btn-fixed-wrap {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 50px;
-}
-
-.btn-fixed-wrap .btn {
-  width: 100%;
-  height: 100%;
-}
-
-.btn-fix-double-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 50px;
-}
-
-.btn-fix-double-wrap .btn {
-  width: 50%;
-}
-
-.btn-ht-sm {
-  height: 30px;
-}
-
-.btn-ht-md {
-  height: 50px;
-}
-
-.btn-ht-lg {
-  height: 60px;
-}
-
-.btn-wi-sm {
-  width: 100px;
-}
-
-.btn-wi-md {
-  width: 150px;
-}
-
-.btn-wi-lg {
-  width: 200px;
-}
-
-.btn-main {
-  background-color: #000;
-}
-
-.btn-sub {
-  background-color: #333;
-}
-
-.btn-bd-main {
-  border: 1px solid #000;
-  background-color: white;
+.scroll-custom::-webkit-scrollbar-thumb {
   color: #000;
 }
 
-.btn-bd-sub {
-  border: 1px solid #333;
-  background-color: white;
-  color: #333;
+html.ie .scroll-custom {
+  scrollbar-arrow-color: #000;
+  scrollbar-face-color: #000;
+  scrollbar-track-color: #333;
 }
 
-.btn-gst-main {
-  border: 1px solid #000;
-  color: #000;
+.empty-content {
+  width: 100%;
+  text-align: center;
 }
 
-.btn-gst-sub {
-  border: 1px solid #333;
-  color: #333;
+.empty-content .img_box {
+  width: 98px;
+  height: 81px;
+  margin: 85px auto 15px;
 }
 
-.btn-kakao {
-  background-color: #fae300;
+.empty-content .in-txt {
+  font-weight: 400;
+  color: gray;
 }
 
-.btn-facebook {
-  background-color: #204889;
+.is-tab-show {
+  display: none;
 }
 
-.btn-naver {
-  background-color: #00bf19;
+.is-mo-show {
+  display: none;
 }
 
-.btn-twitter {
-  background-color: #228cce;
+.is-mo-sm-show {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .is-tab-show {
+    display: block;
+  }
+  .is-tab-hide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .is-mo-show {
+    display: block;
+  }
+  .is-mo-hide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .is-mo-sm-show {
+    display: block;
+  }
+  .is-mo-sm-hide {
+    display: none;
+  }
 }
