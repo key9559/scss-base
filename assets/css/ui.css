@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*일부추가되나*/
 html,
 body,
 a,
@@ -277,13 +276,13 @@ table {
 
 @font-face {
   font-family: "helvatica";
-  font-weight: 600;
+  font-weight: 400;
   src: local("helvatica neue roman"), local("Helvatica Neue Roman"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.woff2") format("woff2"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
 
 @font-face {
   font-family: "helvatica";
-  font-weight: 600;
+  font-weight: 300;
   src: local("helvatica neue lt"), local("Helvatica Neue Lt"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff2") format("woff2"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff") format("woff"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.ttf") format("truetype"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.otf") format("opentype");
 }
 
@@ -363,7 +362,7 @@ table {
 }
 
 /*
-
+  일부만 추가 되나
 */
 .main {
   color: color(main);

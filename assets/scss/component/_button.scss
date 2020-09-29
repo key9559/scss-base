@@ -18,9 +18,8 @@
   }
 }
 /*
-
+  일부만 추가 되나
 */
-// 일부만 추가 되나
 @each $name, $color in $btn-color {
   .#{$name} {
     color: $color;

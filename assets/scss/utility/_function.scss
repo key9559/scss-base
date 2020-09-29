@@ -6,8 +6,3 @@
 @function zIndex($layer) {
   @return map-get($z-index, $layer);
 }
-/*일부추가되나*/
-@function btn-color($color) {
-  @return map-get($main-color, $color);
-  @return map-remove($main-color, "text");
-}
