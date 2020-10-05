@@ -63,6 +63,9 @@
   }
   // button style
   &-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -74,7 +77,7 @@
     border-radius: 8px;
   }
   &-shadow {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
   }
   // &gradi {
   // gradiant 생성하는 믹스인을 받아옴.
@@ -92,10 +95,14 @@
     width: $width + px;
   }
 }
+.btn-wi-100 {
+  width: 100%;
+}
 // 버튼 색
 @each $name, $color in $btn-color {
   .btn-#{$name} {
     background-color: $color;
+    color: color(text);
   }
 }
 // 라인 버튼 색
@@ -114,8 +121,14 @@
   }
 }
 // 소셜 버튼
+// icon button: btn btn-circle btn-kakao
+// text button: btn btn-kakao
 @each $name, $color in $socail {
   .btn-#{$name} {
     background-color: $color;
+    color: #ffffff;
   }
+}
+.btn-kakao {
+  color: #2b1718;
 }
