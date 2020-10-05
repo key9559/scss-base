@@ -26,7 +26,7 @@
   -component styles
     =card, list, input, animation...
     비슷한 상태로 쓰이는 button 추가
-    비슷한 상태로 쓰이는 form 추가(예정)
+    비슷한 상태로 쓰이는 form 추가
 ```
 
 ### layout
