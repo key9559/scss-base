@@ -14,6 +14,8 @@
   -typo
     =font-face...
     폰트 설정과 관련된 부분 추가
+    자주 쓰는 폰트들 추가
+    쓰이지 않는 폰트 및 폰트페이스 삭제해서 사용
 ```
 
 ### component
@@ -31,7 +33,10 @@
   -layout styles
     haeder, footer, l-~...
     layout.scss 추가
-    이외의 header 등의 레이아웃은 프로젝트별 상이하기에 추가하지 않음
+    header.scss 추가(fixed되는 큰 틀만 추가)
+      header-wrap 안쪽의 header가 픽스드되는 구조로,
+      header 안으로 contents가 자리잡음.
+    이외의 레이아웃은 프로젝트별 상이하기에 추가하지 않음
 ```
 
 ### page
