@@ -1,0 +1,29 @@
+.l-center {
+  margin: 20px auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.desc {
+  padding: 50px 0;
+  line-height: 1.5;
+}
+
+.list-desc {
+  padding: 10px;
+  background-color: #fceaff;
+}
+
+.scroll-custom {
+  height: 100px;
+  background: beige;
+  text-align: center;
+}
+
+.flex-items {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  border: 1px solid red;
+}

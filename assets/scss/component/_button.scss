@@ -17,16 +17,33 @@
   // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
   &-wrap {
     display: flex;
+    align-items: center;
+    .btn {
+      margin-left: 10px;
+      &:first-of-type {
+        margin-left: 0px;
+      }
+    }
+  }
+  &-wrap--right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .btn {
+      margin-left: 10px;
+      &:first-of-type {
+        margin-left: 0px;
+      }
+    }
   }
   &-double-wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     .btn {
       width: 50%;
     }
   }
-  &-double-side-wrap {
+  &-double-wrap--side {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +63,7 @@
       height: 100%;
     }
   }
-  &-fix-double-wrap {
+  &-fixed-wrap--double {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,12 +83,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
   &-round {
     border-radius: 25px;
+  }
+  &-round.btn-ht-sm {
+    border-radius: 15px;
+  }
+  &-round.btn-ht-lg {
+    border-radius: 30px;
   }
   &-rounded {
     border-radius: 8px;
@@ -102,7 +125,7 @@
 @each $name, $color in $btn-color {
   .btn-#{$name} {
     background-color: $color;
-    color: color(text);
+    color: color(text); // 어두운배경 따로 color: white지정하기
   }
 }
 // 라인 버튼 색
@@ -123,6 +146,16 @@
 // 소셜 버튼
 // icon button: btn btn-circle btn-kakao
 // text button: btn btn-kakao
+.socail-btn-wrap {
+  flex-wrap: wrap;
+  .btn {
+    margin: 0;
+  }
+}
+
+.socail-icon-btn-wrap {
+  justify-content: center;
+}
 @each $name, $color in $socail {
   .btn-#{$name} {
     background-color: $color;
