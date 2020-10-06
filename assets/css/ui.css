@@ -484,9 +484,12 @@ html.ie .scroll-custom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .btn-wrap .btn {
+  margin: 10px 0;
   margin-left: 10px;
 }
 
@@ -504,9 +507,12 @@ html.ie .scroll-custom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .btn-wrap--right .btn {
+  margin: 10px 0;
   margin-left: 10px;
 }
 

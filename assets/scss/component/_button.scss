@@ -18,7 +18,9 @@
   &-wrap {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     .btn {
+      margin: 10px 0;
       margin-left: 10px;
       &:first-of-type {
         margin-left: 0px;
@@ -29,7 +31,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
     .btn {
+      margin: 10px 0;
       margin-left: 10px;
       &:first-of-type {
         margin-left: 0px;
