@@ -1,16 +1,25 @@
 .list {
   display: flex;
   align-items: center;
-  &-wrap {
-    position: relative;
-  }
   &-title {
     width: 200px;
   }
   &-desc {
     width: 100%;
   }
-  &-wrap--side {
+}
+.list-wrap {
+  position: relative;
+  &--underline {
+    .list {
+      border-top: 1px solid #e6e6e6;
+      padding: 10px 0;
+    }
+    .list:first-of-type {
+      border-top: 0;
+    }
+  }
+  &--side {
     .list {
       justify-content: space-between;
       align-items: center;

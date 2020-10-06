@@ -8,26 +8,17 @@
   margin-bottom: 20px;
   line-height: 1.5;
 }
-.btn-guide {
-  .list {
-    border-bottom: 1px solid #e6e6e6;
-  }
 
-  .list-desc {
-    padding: 0 10px;
-    background-color: #fafafa;
+.scroll-guide {
+  .scroll-custom {
+    height: 100px;
+    background-color: #f5f5f5;
+    text-align: center;
   }
-}
-
-.scroll-custom {
-  height: 100px;
-  background: beige;
-  text-align: center;
 }
 
 .flex-items {
   width: 100px;
-  height: 100px;
-  margin: 10px 0;
+  height: 50px;
   border: 1px solid red;
 }

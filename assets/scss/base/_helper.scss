@@ -1,3 +1,6 @@
+.none {
+  display: none;
+}
 // 브라우저 크기별 레이아웃 보이기
 .is-tab-show {
   display: none;
@@ -6,6 +9,9 @@
   display: none;
 }
 .is-mo-sm-show {
+  display: none;
+}
+.is-mo-xsm-show {
   display: none;
 }
 
@@ -27,7 +33,7 @@
     display: none;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 360px) {
   .is-mo-sm-show {
     display: block;
   }
@@ -35,7 +41,15 @@
     display: none;
   }
 }
-// common
+@media all and (max-width: 320px) {
+  .is-mo-xsm-show {
+    display: block;
+  }
+  .is-mo-xsm-hide {
+    display: none;
+  }
+}
+// image
 .img-box {
   &__img {
     width: 100%;
@@ -69,40 +83,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   &--left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
   }
   &--center {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   &--right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
   }
   &--vertical {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 }
 // scroll custom element에 height 지정 필수
 .scroll-custom {
-  overflow: scroll;
+  overflow-y: auto;
   &::-webkit-scrollbar {
     width: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: color(sub);
+    background-color: color(highlight);
   }
   @at-root html.ie & {
     scrollbar-arrow-color: color(main);
     scrollbar-face-color: color(main);
-    scrollbar-track-color: color(sub);
+    scrollbar-track-color: color(highlight);
   }
 }
