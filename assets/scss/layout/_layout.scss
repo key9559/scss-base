@@ -1,3 +1,13 @@
+/* =================== layout =================== */
+html,
+body,
+#app,
+.wrap {
+  height: 100%;
+}
+.wrap {
+  overflow-y: auto;
+}
 .l-center {
   max-width: 1080px;
   width: 95%;

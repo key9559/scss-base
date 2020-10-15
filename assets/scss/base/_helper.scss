@@ -1,51 +1,49 @@
+/* =================== helper =================== */
 .none {
   display: none;
 }
 // 브라우저 크기별 레이아웃 보이기
 .is-tab-show {
   display: none;
+  @include media(tab) {
+    display: block;
+  }
+}
+.is-tab-hide {
+  @include media(tab) {
+    display: none;
+  }
 }
 .is-mo-show {
-  display: none;
+  display: none !important;
+  @include media(mb) {
+    display: block !important;
+  }
+}
+.is-mo-hide {
+  @include media(mb) {
+    display: none !important;
+  }
 }
 .is-mo-sm-show {
   display: none;
+  @include media-custom(360px) {
+    display: block;
+  }
+}
+.is-mo-sm-hide {
+  @include media-custom(360px) {
+    display: none;
+  }
 }
 .is-mo-xsm-show {
   display: none;
-}
-
-@media all and (max-width: 768px) {
-  // 혹은 900px
-  .is-tab-show {
+  @include media-custom(320px) {
     display: block;
   }
-  .is-tab-hide {
-    display: none;
-  }
 }
-@media all and (max-width: 630px) {
-  // 혹은 600px
-  .is-mo-show {
-    display: block;
-  }
-  .is-mo-hide {
-    display: none;
-  }
-}
-@media all and (max-width: 360px) {
-  .is-mo-sm-show {
-    display: block;
-  }
-  .is-mo-sm-hide {
-    display: none;
-  }
-}
-@media all and (max-width: 320px) {
-  .is-mo-xsm-show {
-    display: block;
-  }
-  .is-mo-xsm-hide {
+.is-mo-xsm-hide {
+  @include media-custom(320px) {
     display: none;
   }
 }
@@ -80,33 +78,32 @@
   clear: both;
 }
 .flex-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex {
+    @include flex-item-option(center, space-between);
+  }
   width: 100%;
   &--left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex {
+      @include flex-item-option(center, flex-start);
+    }
     width: 100%;
   }
   &--center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex {
+      @include flex-item-center();
+    }
     width: 100%;
   }
   &--right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex {
+      @include flex-item-option(center, flex-end);
+    }
     width: 100%;
   }
   &--vertical {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column {
+      @include flex-item-center();
+    }
     width: 100%;
   }
 }

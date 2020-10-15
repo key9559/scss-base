@@ -1,3 +1,4 @@
+/* =================== base =================== */
 html,
 body,
 a,
@@ -160,19 +161,6 @@ ol,
 ul,
 dl {
   list-style: none;
-}
-button,
-select,
-input,
-textarea {
-  box-shadow: none;
-  border-radius: 0;
-  outline: 0;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  resize: none;
 }
 select {
   padding: 5px 10px;
