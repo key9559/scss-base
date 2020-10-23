@@ -15,14 +15,14 @@
   }
 }
 .is-mo-show {
-  display: none !important;
+  display: none;
   @include media(mb) {
-    display: block !important;
+    display: block;
   }
 }
 .is-mo-hide {
   @include media(mb) {
-    display: none !important;
+    display: none;
   }
 }
 .is-mo-sm-show {
