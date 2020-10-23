@@ -25,6 +25,19 @@
   }
 }
 
+// position: fixed
+@mixin fixed($t: 0, $l: 0, $b: null, $r: null) {
+  position: fixed;
+
+  @if $t {
+    top: if($b, auto, $t);
+    bottom: $b;
+
+    left: if($r, auto, $l);
+    right: if($l == 0 or $l, $r, $l);
+  }
+}
+
 @mixin pos-abs-center {
   position: absolute;
   left: 50%;
