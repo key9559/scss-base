@@ -9,11 +9,15 @@
 @import "base/typo";
 @import "base/helper";
 
-// 3. component
+// 3. vendor
+
+// 4. component
 @import "component/button";
 @import "component/form";
 @import "component/list";
 
-// 4. layout
+// 5. layout
 @import "layout/layout";
 @import "layout/header";
+
+// 6. page
