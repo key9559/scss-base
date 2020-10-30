@@ -140,9 +140,12 @@ wbr {
   padding: 0;
   border: 0;
   font-size: 100%;
-  line-height: 1.2;
+  line-height: 1.15;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: "helvatica", "noto", "spoqa", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.04em;
 }
 html {
   -webkit-tap-highlight-color: transparent;
