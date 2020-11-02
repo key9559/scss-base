@@ -75,3 +75,54 @@
     }
   }
 }
+// 별점영역
+.write-rating {
+  position: relative;
+  margin: 8px 0 14px;
+  .rating__score {
+    @include wh(20px, 29px);
+
+    position: relative;
+    display: inline-block;
+    z-index: zIndex(default);
+    opacity: 0;
+  }
+  .rating__img {
+    @include absolute;
+
+    width: 100%;
+    z-index: zIndex(zero);
+
+    &:after {
+      @include font-op($w: 600, $ls: 0) {
+        font-size: childEmSize(18, 20);
+      }
+
+      display: block;
+      margin-top: 4px;
+    }
+  }
+}
+.rating__img {
+  display: none;
+}
+.score00 {
+  display: block;
+  &:after {
+    content: "0.0";
+  }
+}
+
+@for $i from 1 through 5 {
+  #rating#{$i}:checked {
+    ~ .score0#{$i} {
+      display: block;
+    }
+    ~ .score00 {
+      display: none;
+    }
+  }
+  .score0#{$i}:after {
+    content: "#{$i}.0";
+  }
+}
