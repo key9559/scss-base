@@ -8,8 +8,15 @@
 
 ```
 poppins woff2 만들기
+poppins otf는? 용량이 작아서 고민중
 spoqa han sans otf 만들기
 font-face 재정비하기
+  - helvetica: E
+  - nanum square: 연결 대기
+  - noto sans: E
+  - open sans: 연결 대기
+  - poppins: 종류 증가 대응
+  - spoqa han sans: open type 대응
 ```
 
 ### font
@@ -78,5 +85,5 @@ _typo.scss에서 사용하지 않는 폰트의 font-face 삭제
 ```
   -output styles
     =reset, normalise, slick, swiper...
-    프로젝트별 적용할 부분이 다르므로 추가하지 않음
+    vendor는 보통 css로 되기때문에 사용하지 않으면 삭제
 ```

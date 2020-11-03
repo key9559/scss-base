@@ -140,7 +140,6 @@ wbr {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   line-height: 1.15;
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
@@ -148,6 +147,8 @@ wbr {
   font-family: "helvatica", "noto", "spoqa", sans-serif;
   font-size: 16px;
   letter-spacing: -0.04em;
+  stroke-width: 0;
+  word-break: break-all;
 }
 
 html {
@@ -188,7 +189,7 @@ table {
 }
 
 /* =================== typo =================== */
-/* noto sans kr */
+/* ---------- noto sans kr ---------- */
 @font-face {
   font-family: "noto";
   font-weight: 800;
@@ -231,7 +232,7 @@ table {
   src: local("noto sans kr thin"), local("Noto Sans KR Thin"), url("../../fonts/notosanskr/NotoSansKR-Thin.woff2") format("woff2"), url("../../fonts/notosanskr/NotoSansKR-Thin.woff") format("woff"), url("../../fonts/notosanskr/NotoSansKR-Thin.otf") format("opentype"), url("../../fonts/notosanskr/NotoSansKR-Thin.ttf") format("truetype");
 }
 
-/* spoqa han sans */
+/* ---------- spoqa han sans ---------- */
 @font-face {
   font-family: "spoqa";
   font-weight: 600;
@@ -256,7 +257,7 @@ table {
   src: local("spoqa han sans thin"), local("Spoqa Han Sans Thin"), url("../../fonts/SpoqaHanSans/Spoqa_Han_Sans_Thin.woff2") format("woff2"), url("../../fonts/SpoqaHanSans/Spoqa_Han_Sans_Thin.woff") format("woff"), url("../../fonts/SpoqaHanSans/Spoqa_Han_Sans_Thin.ttf") format("truetype");
 }
 
-/* helvetica neue */
+/* ---------- helvetica neue ---------- */
 @font-face {
   font-family: "helvatica";
   font-weight: 800;
@@ -281,7 +282,7 @@ table {
   src: local("helvatica neue lt"), local("Helvatica Neue Lt"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff2") format("woff2"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff") format("woff"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.otf") format("opentype"), url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.ttf") format("truetype");
 }
 
-/* poppins */
+/* ---------- poppins ---------- */
 @font-face {
   font-family: "poppins";
   font-weight: 900;
@@ -334,12 +335,6 @@ table {
   font-family: "poppins";
   font-weight: 100;
   src: local("poppins-Thin"), local("poppins-Thin"), url("../../fonts/poppins/Poppins-Thin.woff") format("woff"), url("../../fonts/poppins/Poppins-Thin.ttf") format("truetype");
-}
-
-:root {
-  word-break: break-all;
-  color: #333333;
-  stroke-width: 0;
 }
 
 /* =================== helper =================== */

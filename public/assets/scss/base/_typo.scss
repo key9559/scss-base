@@ -1,5 +1,5 @@
 /* =================== typo =================== */
-/* noto sans kr */
+/* ---------- noto sans kr ---------- */
 @font-face {
   font-family: "noto";
   font-weight: 800;
@@ -64,7 +64,7 @@
     url("../../fonts/notosanskr/NotoSansKR-Thin.ttf") format("truetype");
 }
 
-/* spoqa han sans */
+/* ---------- spoqa han sans ---------- */
 @font-face {
   font-family: "spoqa";
   font-weight: 600;
@@ -99,7 +99,7 @@
     url("../../fonts/SpoqaHanSans/Spoqa_Han_Sans_Thin.ttf") format("truetype");
 }
 
-/* helvetica neue */
+/* ---------- helvetica neue ---------- */
 @font-face {
   font-family: "helvatica";
   font-weight: 800;
@@ -150,7 +150,7 @@
       format("truetype");
 }
 
-/* poppins */
+/* ---------- poppins ---------- */
 @font-face {
   font-family: "poppins";
   font-weight: 900;
@@ -213,10 +213,4 @@
   src: local("poppins-Thin"), local("poppins-Thin"),
     url("../../fonts/poppins/Poppins-Thin.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Thin.ttf") format("truetype");
-}
-
-:root {
-  word-break: break-all;
-  color: color(text);
-  stroke-width: 0;
 }

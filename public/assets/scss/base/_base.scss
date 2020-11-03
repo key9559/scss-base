@@ -139,13 +139,14 @@ wbr {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   line-height: 1.15;
   vertical-align: baseline;
   box-sizing: border-box;
   font-family: "helvatica", "noto", "spoqa", sans-serif;
   font-size: 16px;
   letter-spacing: -0.04em;
+  stroke-width: 0;
+  word-break: break-all;
 }
 html {
   -webkit-tap-highlight-color: transparent;
