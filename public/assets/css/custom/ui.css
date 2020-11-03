@@ -914,6 +914,108 @@ html.ie .scroll-custom {
   opacity: 0.6;
 }
 
+.write-rating {
+  position: relative;
+  margin: 8px 0 14px;
+}
+
+.write-rating .rating__score {
+  width: 20px;
+  height: 29px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  opacity: 0;
+}
+
+.write-rating .rating__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.write-rating .rating__img:after {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: block;
+  margin-top: 4px;
+}
+
+.rating__img {
+  display: none;
+}
+
+.score00 {
+  display: block;
+}
+
+.score00:after {
+  content: "0.0";
+}
+
+#rating1:checked ~ .score01 {
+  display: block;
+}
+
+#rating1:checked ~ .score00 {
+  display: none;
+}
+
+.score01:after {
+  content: "1.0";
+}
+
+#rating2:checked ~ .score02 {
+  display: block;
+}
+
+#rating2:checked ~ .score00 {
+  display: none;
+}
+
+.score02:after {
+  content: "2.0";
+}
+
+#rating3:checked ~ .score03 {
+  display: block;
+}
+
+#rating3:checked ~ .score00 {
+  display: none;
+}
+
+.score03:after {
+  content: "3.0";
+}
+
+#rating4:checked ~ .score04 {
+  display: block;
+}
+
+#rating4:checked ~ .score00 {
+  display: none;
+}
+
+.score04:after {
+  content: "4.0";
+}
+
+#rating5:checked ~ .score05 {
+  display: block;
+}
+
+#rating5:checked ~ .score00 {
+  display: none;
+}
+
+.score05:after {
+  content: "5.0";
+}
+
 /* =================== list =================== */
 .list {
   display: -webkit-box;

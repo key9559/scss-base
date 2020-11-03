@@ -75,11 +75,13 @@
     }
   }
 }
+
 // 별점영역
 .write-rating {
   position: relative;
   margin: 8px 0 14px;
   .rating__score {
+    // 크기를 이미지의 별크기로 재지정
     @include wh(20px, 29px);
 
     position: relative;
