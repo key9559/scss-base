@@ -4,6 +4,21 @@
 
 !프로젝트에 적용할 때, 세세한 조정 필수!
 
+## 작업 예정 리스트
+
+```
+poppins woff2 만들기
+spoqa han sans otf 만들기
+font-face 재정비하기
+```
+
+### font
+
+```
+프로젝트에 맞는 폰트 폴더만 남기고
+_typo.scss에서 사용하지 않는 폰트의 font-face 삭제
+```
+
 ### base
 
 ```
