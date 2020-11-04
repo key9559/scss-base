@@ -215,6 +215,28 @@
   outline: none;
 }
 
+@mixin input-style(
+  $w: 100%,
+  $h: 54px,
+  $bd-wi: 1px,
+  $bd-st: solid,
+  $bd-cl: #c5c5c5,
+  $bd-rd: 6px,
+  $bg-color: white
+) {
+  width: $w;
+  height: $h;
+  border: $bd-wi $bd-st $bd-cl;
+  border-radius: $bd-rd;
+  padding: 0 17px;
+  background-color: $bg-color;
+  font-size: emSize(18);
+  @content;
+  &:focus {
+    border-color: color(main);
+  }
+}
+
 @mixin clearfix {
   &:after {
     content: "";
