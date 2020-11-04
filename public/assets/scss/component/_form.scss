@@ -9,8 +9,8 @@
   appearance: none;
   resize: none;
   font-family: "noto", sans-serif;
-  // input은 무조건 input-box안에 사용
-  &-box {
+  // input은 무조건 input-wrap안에 사용
+  &-wrap {
     width: 100%;
   }
   // select

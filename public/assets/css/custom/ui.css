@@ -737,6 +737,18 @@ html.ie .scroll-custom {
   color: #333333;
 }
 
+.btn-gra {
+  background: -webkit-gradient(linear, right top, left top, from(#563094), color-stop(50%, #ea4d74), to(#563094));
+  background: linear-gradient(to left, #563094 0%, #ea4d74 50%, #563094 100%);
+  background-size: 200%;
+  background-position: left top;
+  color: white;
+}
+
+.btn-gra:hover {
+  background-position-x: 100%;
+}
+
 .btn-bd-main {
   border: 1px solid #563094;
   background-color: white;
@@ -818,7 +830,7 @@ html.ie .scroll-custom {
   font-family: "noto", sans-serif;
 }
 
-.input-box {
+.input-wrap {
   width: 100%;
 }
 

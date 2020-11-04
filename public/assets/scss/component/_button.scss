@@ -107,9 +107,6 @@
   &-shadow {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
   }
-  // &gradi {
-  // gradiant 생성하는 믹스인을 받아옴.
-  // }
 }
 // 버튼 높이
 @each $name, $height in $btn-height {
@@ -132,6 +129,9 @@
     background-color: $color;
     color: color(text); // 어두운배경 따로 color: white지정하기
   }
+}
+.btn-gra {
+  @include btn-gra();
 }
 // 라인 버튼 색
 @each $name, $color in $btn-color {
