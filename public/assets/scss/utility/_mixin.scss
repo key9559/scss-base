@@ -255,22 +255,12 @@
   }
 }
 
-@mixin changed-circle($size) {
+@mixin circle($size) {
   @include inline-block;
   @include wh($size, $size);
 
   border-radius: 50%;
   @content;
-}
-
-@mixin circle-in-after {
-  height: auto;
-
-  @include make-after {
-    width: 100%;
-    padding-top: 100%;
-    user-select: none;
-  }
 }
 
 @mixin gra(
