@@ -808,101 +808,7 @@ html.ie .scroll-custom {
   width: 100%;
 }
 
-.input-selec {
-  width: 100%;
-  height: 54px;
-  border: 1px solid #c5c5c5;
-  border-radius: 6px;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
-  cursor: pointer;
-}
-
-.input-selec:focus {
-  border-color: color;
-}
-
-.input-selec::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec::placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--round {
-  width: 100%;
-  height: 54px;
-  border: 1px solid #c5c5c5;
-  border-radius: 25px;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
-  cursor: pointer;
-}
-
-.input-selec--round:focus {
-  border-color: color;
-}
-
-.input-selec--round::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--round:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--round::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--round::placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--underbar {
-  width: 100%;
-  height: 54px;
-  border: 0 solid #c5c5c5;
-  border-radius: 0;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
-  border-bottom: 1px;
-  cursor: pointer;
-}
-
-.input-selec--underbar:focus {
-  border-color: color;
-}
-
-.input-selec--underbar::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--underbar:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--underbar::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-selec--underbar::placeholder {
-  opacity: 0.7;
-}
-
-.input-txt {
+.input-style {
   width: 100%;
   height: 54px;
   border: 1px solid #c5c5c5;
@@ -912,27 +818,27 @@ html.ie .scroll-custom {
   font-size: 1.125em;
 }
 
-.input-txt:focus {
+.input-style:focus {
   border-color: color;
 }
 
-.input-txt::-webkit-input-placeholder {
+.input-style::-webkit-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt:-ms-input-placeholder {
+.input-style:-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt::-ms-input-placeholder {
+.input-style::-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt::placeholder {
+.input-style::placeholder {
   opacity: 0.7;
 }
 
-.input-txt--round {
+.input-style--round {
   width: 100%;
   height: 54px;
   border: 1px solid #c5c5c5;
@@ -942,27 +848,27 @@ html.ie .scroll-custom {
   font-size: 1.125em;
 }
 
-.input-txt--round:focus {
+.input-style--round:focus {
   border-color: color;
 }
 
-.input-txt--round::-webkit-input-placeholder {
+.input-style--round::-webkit-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--round:-ms-input-placeholder {
+.input-style--round:-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--round::-ms-input-placeholder {
+.input-style--round::-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--round::placeholder {
+.input-style--round::placeholder {
   opacity: 0.7;
 }
 
-.input-txt--underbar {
+.input-style--underbar {
   width: 100%;
   height: 54px;
   border: 0 solid #c5c5c5;
@@ -973,115 +879,32 @@ html.ie .scroll-custom {
   border-bottom: 1px;
 }
 
-.input-txt--underbar:focus {
+.input-style--underbar:focus {
   border-color: color;
 }
 
-.input-txt--underbar::-webkit-input-placeholder {
+.input-style--underbar::-webkit-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--underbar:-ms-input-placeholder {
+.input-style--underbar:-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--underbar::-ms-input-placeholder {
+.input-style--underbar::-ms-input-placeholder {
   opacity: 0.7;
 }
 
-.input-txt--underbar::placeholder {
+.input-style--underbar::placeholder {
   opacity: 0.7;
 }
 
 .input-tarea {
-  width: 100%;
   height: 200px;
-  border: 1px solid #c5c5c5;
-  border-radius: 6px;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
 }
 
-.input-tarea:focus {
-  border-color: color;
-}
-
-.input-tarea::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea::placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--round {
-  width: 100%;
-  height: 200px;
-  border: 1px solid #c5c5c5;
-  border-radius: 25px;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
-}
-
-.input-tarea--round:focus {
-  border-color: color;
-}
-
-.input-tarea--round::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--round:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--round::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--round::placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--underbar {
-  width: 100%;
-  height: 200px;
-  border: 0 solid #c5c5c5;
-  border-radius: 0;
-  padding: 0 17px;
-  background-color: white;
-  font-size: 1.125em;
-  border-bottom: 1px;
-}
-
-.input-tarea--underbar:focus {
-  border-color: color;
-}
-
-.input-tarea--underbar::-webkit-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--underbar:-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--underbar::-ms-input-placeholder {
-  opacity: 0.7;
-}
-
-.input-tarea--underbar::placeholder {
-  opacity: 0.7;
+.input-selec {
+  cursor: pointer;
 }
 
 /* =================== list =================== */

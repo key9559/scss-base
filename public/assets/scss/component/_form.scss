@@ -7,25 +7,8 @@
   &-wrap {
     width: 100%;
   }
-  // select
-  &-selec {
-    @include input-style() {
-      cursor: pointer;
-    }
-    &--round {
-      @include input-style($bd-rd: 25px) {
-        cursor: pointer;
-      }
-    }
-    &--underbar {
-      @include input-style($bd-wi: 0, $bd-rd: 0) {
-        border-bottom: 1px;
-        cursor: pointer;
-      }
-    }
-  }
-  // input text
-  &-txt {
+  // input text: class="input input-style"
+  &-style {
     @include input-style();
     &--round {
       @include input-style($bd-rd: 25px);
@@ -36,16 +19,12 @@
       }
     }
   }
-  // textarea
+  // textarea: class="input input-style input-tarea"
   &-tarea {
-    @include input-style($h: 200px);
-    &--round {
-      @include input-style($h: 200px, $bd-rd: 25px);
-    }
-    &--underbar {
-      @include input-style($h: 200px, $bd-wi: 0, $bd-rd: 0) {
-        border-bottom: 1px;
-      }
-    }
+    height: 200px;
+  }
+  // select: class="input input-style input-selec"
+  &-selec {
+    cursor: pointer;
   }
 }

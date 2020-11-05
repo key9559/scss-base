@@ -7,7 +7,6 @@
 ## 작업 예정 리스트
 
 ```
-poppins woff2 만들기
 poppins otf는? 용량이 작아서 고민중
 spoqa han sans otf 만들기
 font-face 재정비하기
