@@ -7,8 +7,7 @@
 ## 작업 예정 리스트
 
 ```
-poppins otf는? 용량이 작아서 고민중
-spoqa han sans otf 만들기
+poppins otf 이어 받기
 font-face 재정비하기
   - helvetica: E
   - nanum square: 연결 대기
