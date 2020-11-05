@@ -1,15 +1,9 @@
 /* =================== button =================== */
 .btn {
+  @include input-reset;
+  @include flex-item-center;
+
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: none;
-  border-radius: 0;
-  outline: 0;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   cursor: pointer;
   &.is-disabled {
     background-color: gray;
@@ -17,9 +11,10 @@
   }
   // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
   &-wrap {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex {
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .btn {
       margin: 10px 0;
       margin-left: 10px;
@@ -29,10 +24,11 @@
     }
   }
   &-wrap--right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex {
+      @include flex-item-option(center, flex-end);
+
+      flex-wrap: wrap;
+    }
     .btn {
       margin: 10px 0;
       margin-left: 10px;
@@ -42,26 +38,25 @@
     }
   }
   &-double-wrap {
-    display: flex;
-    align-items: center;
+    @include flex {
+      align-items: center;
+    }
     .btn {
       width: 50%;
     }
   }
   &-double-wrap--side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex {
+      @include flex-item-option(center, space-between);
+    }
     .btn {
       width: 48%;
     }
   }
   &-fixed-wrap {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
+    @include fixed($b: 0);
+    @include wh(100%, 50px);
+
     z-index: z(fixed);
     .btn {
       width: 100%;
@@ -69,14 +64,12 @@
     }
   }
   &-fixed-wrap--double {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
+    @include flex {
+      @include flex-item-option(center, space-between);
+    }
+    @include fixed($b: 0);
+    @include wh(100%, 50px);
+
     z-index: z(fixed);
     .btn {
       width: 50%;
@@ -85,11 +78,10 @@
   }
   // button style
   &-circle {
+    @include flex-item-center;
+    @include circle(50px);
+
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
   }
   &-round {

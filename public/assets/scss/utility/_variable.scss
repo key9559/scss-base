@@ -38,20 +38,15 @@ $breakpoints: (
 // btn 높이 추가하면 .btn-ht-크기 가 추가된다.
 $btn-height: (
   sm: 30,
-  md: 50,
-  lg: 60,
 );
 // btn width 추가하면 .btn-wi-크기 가 추가된다.
 $btn-width: (
   sm: 100,
-  md: 150,
-  lg: 200,
 );
 // btn color 추가하면 .btn-색이름 .btn-bd-색이름 .btn-gst-색이름 이 추가된다.
 $btn-color: (
   main: #{color(main)},
   sub: color(sub),
-  highlight: color(highlight),
 );
 // .btn-소셜이름 이 추가된다.
 $socail: (
