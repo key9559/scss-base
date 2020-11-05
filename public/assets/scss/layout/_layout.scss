@@ -1,10 +1,9 @@
 /* =================== layout =================== */
-html,
-body,
-#app {
-  height: 100%;
-}
+#app,
 .wrap {
+  min-height: 100%;
+}
+#page {
   min-height: 100%;
 }
 .l-center {
