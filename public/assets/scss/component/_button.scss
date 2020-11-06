@@ -1,9 +1,10 @@
 /* =================== button =================== */
 .btn {
   @include input-reset;
-  @include flex-item-center;
+  @include flex(inline-flex) {
+    @include flex-item-center;
+  }
 
-  display: inline-flex;
   cursor: pointer;
   &.is-disabled {
     background-color: gray;
@@ -78,10 +79,11 @@
   }
   // button style
   &-circle {
-    @include flex-item-center;
+    @include flex(inline-flex) {
+      @include flex-item-center;
+    }
     @include circle(50px);
 
-    display: inline-flex;
     border-radius: 50%;
   }
   &-round {

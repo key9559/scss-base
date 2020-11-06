@@ -587,15 +587,15 @@ html.ie .scroll-custom {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   cursor: pointer;
 }
 
@@ -716,6 +716,9 @@ html.ie .scroll-custom {
 }
 
 .btn-circle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -726,9 +729,6 @@ html.ie .scroll-custom {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   border-radius: 50%;
 }
 
