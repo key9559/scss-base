@@ -7,14 +7,7 @@
 ## 작업 예정 리스트
 
 ```
-poppins otf 이어 받기
-font-face 재정비하기
-  - helvetica: E
-  - nanum square: 연결 대기
-  - noto sans: E
-  - open sans: 연결 대기
-  - poppins: 종류 증가 대응
-  - spoqa han sans: open type 대응
+
 ```
 
 ### font
