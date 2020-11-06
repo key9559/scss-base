@@ -147,35 +147,44 @@ wbr {
   stroke-width: 0;
   word-break: break-all;
 }
+
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
 }
+
 a {
   outline: 0;
   background-color: transparent;
+
   text: {
     decoration: none;
   }
+
   color: color(text);
   cursor: pointer;
 }
+
 ol,
 ul,
 dl {
   list-style: none;
 }
+
 select {
   padding: 5px 10px;
 }
+
 /* ie 화살표 제거 */
 select::-ms-expand {
   display: none;
 }
+
 address {
   font-style: normal;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

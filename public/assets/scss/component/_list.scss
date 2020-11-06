@@ -7,6 +7,7 @@
   &-title {
     width: 200px;
   }
+
   &-desc {
     width: 100%;
   }
@@ -25,6 +26,7 @@
       border-top: 0;
     }
   }
+
   &--side {
     .list {
       @include flex-item-option(center, space-between);

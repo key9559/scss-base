@@ -2,6 +2,7 @@
 @function color($color) {
   @return map-get($main-color, $color);
 }
+
 // image url setting
 @function path($path) {
   @return map-get($path-set, $path);

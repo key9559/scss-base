@@ -160,7 +160,7 @@ a {
   outline: 0;
   background-color: transparent;
   text-decoration: none;
-  color: textcolor;
+  color: black;
   cursor: pointer;
 }
 
@@ -568,9 +568,14 @@ table {
   width: 5px;
 }
 
+.scroll-custom::-webkit-scrollbar-thumb {
+  background-color: pink;
+}
+
 html.ie .scroll-custom {
-  scrollbar-arrow-color: color;
-  scrollbar-face-color: color;
+  scrollbar-arrow-color: lightblue;
+  scrollbar-face-color: lightblue;
+  scrollbar-track-color: pink;
 }
 
 /* =================== button =================== */
@@ -579,9 +584,7 @@ html.ie .scroll-custom {
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
-  /*ios에 나오는 그림자 제거*/
   -moz-appearance: none;
-  /*ios에 나오는 그림자 제거*/
   appearance: none;
   padding: 0;
   outline: none;
@@ -757,8 +760,24 @@ html.ie .scroll-custom {
   height: 30px;
 }
 
+.btn-ht-md {
+  height: 50px;
+}
+
+.btn-ht-lg {
+  height: 70px;
+}
+
 .btn-wi-sm {
   width: 100px;
+}
+
+.btn-wi-md {
+  width: 150px;
+}
+
+.btn-wi-lg {
+  width: 200px;
 }
 
 .btn-wi-100 {
@@ -766,21 +785,28 @@ html.ie .scroll-custom {
 }
 
 .btn-main {
-  background-color: color;
-  color: textcolor;
+  background-color: lightblue;
+  color: black;
 }
 
 .btn-sub {
-  background-color: color;
-  color: textcolor;
+  background-color: pink;
+  color: black;
+}
+
+.btn-gray {
+  background-color: gray;
+  color: black;
 }
 
 .btn-gra {
-  background: -webkit-gradient(linear, right top, left top, from(color), color-stop(50%, color), to(color));
-  background: linear-gradient(to left, color 0%, color 50%, color 100%);
+  background: -webkit-gradient(linear, right top, left top, from(lightblue), color-stop(50%, pink), to(lightblue));
+  background: linear-gradient(to left, lightblue 0%, pink 50%, lightblue 100%);
   background-size: 200%;
   background-position: left top;
   color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-gra:hover {
@@ -788,25 +814,36 @@ html.ie .scroll-custom {
 }
 
 .btn-bd-main {
-  border: 1px solid color;
+  border: 1px solid lightblue;
   background-color: white;
-  color: color;
+  color: lightblue;
 }
 
 .btn-bd-sub {
-  border: 1px solid color;
+  border: 1px solid pink;
   background-color: white;
-  color: color;
+  color: pink;
+}
+
+.btn-bd-gray {
+  border: 1px solid gray;
+  background-color: white;
+  color: gray;
 }
 
 .btn-gst-main {
-  border: 1px solid color;
-  color: color;
+  border: 1px solid lightblue;
+  color: lightblue;
 }
 
 .btn-gst-sub {
-  border: 1px solid color;
-  color: color;
+  border: 1px solid pink;
+  color: pink;
+}
+
+.btn-gst-gray {
+  border: 1px solid gray;
+  color: gray;
 }
 
 .socail-btn-wrap {
@@ -849,9 +886,7 @@ html.ie .scroll-custom {
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
-  /*ios에 나오는 그림자 제거*/
   -moz-appearance: none;
-  /*ios에 나오는 그림자 제거*/
   appearance: none;
   padding: 0;
   outline: none;
@@ -865,6 +900,7 @@ html.ie .scroll-custom {
 }
 
 .input-style {
+  display: block;
   width: 100%;
   height: 54px;
   border: 1px solid #c5c5c5;
@@ -875,7 +911,7 @@ html.ie .scroll-custom {
 }
 
 .input-style:focus {
-  border-color: color;
+  border-color: lightblue;
 }
 
 .input-style::-webkit-input-placeholder {
@@ -895,6 +931,7 @@ html.ie .scroll-custom {
 }
 
 .input-style--round {
+  display: block;
   width: 100%;
   height: 54px;
   border: 1px solid #c5c5c5;
@@ -905,7 +942,7 @@ html.ie .scroll-custom {
 }
 
 .input-style--round:focus {
-  border-color: color;
+  border-color: lightblue;
 }
 
 .input-style--round::-webkit-input-placeholder {
@@ -925,6 +962,7 @@ html.ie .scroll-custom {
 }
 
 .input-style--underbar {
+  display: block;
   width: 100%;
   height: 54px;
   border: 0 solid #c5c5c5;
@@ -936,7 +974,7 @@ html.ie .scroll-custom {
 }
 
 .input-style--underbar:focus {
-  border-color: color;
+  border-color: lightblue;
 }
 
 .input-style--underbar::-webkit-input-placeholder {
@@ -1046,7 +1084,7 @@ html.ie .scroll-custom {
 
 .empty-content__txt {
   font-weight: 400;
-  color: textcolor;
+  color: black;
   opacity: 0.8;
 }
 
