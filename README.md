@@ -59,6 +59,8 @@ _typo.scss에서 사용하지 않는 폰트의 font-face 삭제
 ```
   -page contant styles
     =main, cs, auth, enroll, mypage...
+    main.scss 추가
+    라인 추가시 vscode의 watching sass가 중단되는걸 방지하기위해 비어있는 상태로 추가
     프로젝트별 상이하기때문에 추가하지 않음
 ```
 
