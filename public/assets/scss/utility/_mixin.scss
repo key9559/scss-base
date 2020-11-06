@@ -110,14 +110,14 @@
   height: 100%;
 }
 
-@mixin flex-column {
-  display: flex;
+@mixin flex-column($d: flex) {
+  display: $d;
   flex-direction: column;
   @content;
 }
 
-@mixin flex {
-  display: flex;
+@mixin flex($d: flex) {
+  display: $d;
   @content;
 }
 
