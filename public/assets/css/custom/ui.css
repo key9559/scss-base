@@ -1001,6 +1001,46 @@ html.ie .scroll-custom {
   cursor: pointer;
 }
 
+.rate1:before {
+  content: 1 + ".0";
+}
+
+.rate1:after {
+  content: url("../../images/icon/icon_star" + 1 + ".svg");
+}
+
+.rate2:before {
+  content: 2 + ".0";
+}
+
+.rate2:after {
+  content: url("../../images/icon/icon_star" + 2 + ".svg");
+}
+
+.rate3:before {
+  content: 3 + ".0";
+}
+
+.rate3:after {
+  content: url("../../images/icon/icon_star" + 3 + ".svg");
+}
+
+.rate4:before {
+  content: 4 + ".0";
+}
+
+.rate4:after {
+  content: url("../../images/icon/icon_star" + 4 + ".svg");
+}
+
+.rate5:before {
+  content: 5 + ".0";
+}
+
+.rate5:after {
+  content: url("../../images/icon/icon_star" + 5 + ".svg");
+}
+
 /* =================== list =================== */
 .list {
   display: -webkit-box;
@@ -1065,6 +1105,7 @@ html.ie .scroll-custom {
   height: 50px;
   padding: 0 20px;
   padding-right: 50px;
+  cursor: pointer;
 }
 
 .accordion__label .accordion__title {

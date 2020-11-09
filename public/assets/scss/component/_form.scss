@@ -36,3 +36,15 @@
     cursor: pointer;
   }
 }
+
+// star score
+@for $i from 1 through 5 {
+  .rate#{$i} {
+    &:before {
+      content: #{$i} + ".0";
+    }
+    &:after {
+      content: url("../../images/icon/icon_star" + #{$i} + ".svg");
+    }
+  }
+}
