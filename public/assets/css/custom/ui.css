@@ -1002,43 +1002,43 @@ html.ie .scroll-custom {
 }
 
 .rate1:before {
-  content: 1 + ".0";
+  content: "1.0";
 }
 
 .rate1:after {
-  content: url("../../images/icon/icon_star" + 1 + ".svg");
+  content: url("../../images/icon/icon_star1.svg");
 }
 
 .rate2:before {
-  content: 2 + ".0";
+  content: "2.0";
 }
 
 .rate2:after {
-  content: url("../../images/icon/icon_star" + 2 + ".svg");
+  content: url("../../images/icon/icon_star2.svg");
 }
 
 .rate3:before {
-  content: 3 + ".0";
+  content: "3.0";
 }
 
 .rate3:after {
-  content: url("../../images/icon/icon_star" + 3 + ".svg");
+  content: url("../../images/icon/icon_star3.svg");
 }
 
 .rate4:before {
-  content: 4 + ".0";
+  content: "4.0";
 }
 
 .rate4:after {
-  content: url("../../images/icon/icon_star" + 4 + ".svg");
+  content: url("../../images/icon/icon_star4.svg");
 }
 
 .rate5:before {
-  content: 5 + ".0";
+  content: "5.0";
 }
 
 .rate5:after {
-  content: url("../../images/icon/icon_star" + 5 + ".svg");
+  content: url("../../images/icon/icon_star5.svg");
 }
 
 /* =================== list =================== */
