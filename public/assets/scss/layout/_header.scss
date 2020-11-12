@@ -7,5 +7,5 @@
   @include fixed;
   @include wh(100%, 50px);
 
-  z-index: z(header);
+  z-index: zIndex(header);
 }

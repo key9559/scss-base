@@ -686,7 +686,7 @@ html.ie .scroll-custom {
   left: 0;
   width: 100%;
   height: 50px;
-  z-index: z(fixed);
+  z-index: 20;
 }
 
 .btn-fixed-wrap .btn {
@@ -710,7 +710,7 @@ html.ie .scroll-custom {
   left: 0;
   width: 100%;
   height: 50px;
-  z-index: z(fixed);
+  z-index: 20;
 }
 
 .btn-fixed-wrap--double .btn {
@@ -1216,7 +1216,7 @@ html.ie .scroll-custom {
   left: 0;
   width: 100%;
   height: 50px;
-  z-index: z(header);
+  z-index: 10;
 }
 
 /* =================== footer =================== */

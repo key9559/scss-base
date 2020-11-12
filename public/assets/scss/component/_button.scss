@@ -68,7 +68,7 @@
     @include fixed($b: 0);
     @include wh(100%, 50px);
 
-    z-index: z(fixed);
+    z-index: zIndex(fixed);
 
     .btn {
       width: 100%;
@@ -83,7 +83,7 @@
     @include fixed($b: 0);
     @include wh(100%, 50px);
 
-    z-index: z(fixed);
+    z-index: zIndex(fixed);
 
     .btn {
       @include wh(50%, 100%);
