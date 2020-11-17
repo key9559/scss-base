@@ -16,6 +16,7 @@
         "savePath": "/public/assets/css/custom"
       }
     ],
+    "editor.tabSize": 2,
     "liveSassCompile.settings.generateMap": false,
     "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
   }
