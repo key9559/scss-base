@@ -106,7 +106,6 @@
 }
 
 @mixin circle($size) {
-  @include inline-block;
   @include wh($size, $size);
 
   border-radius: 50%;
@@ -185,7 +184,7 @@
   letter-spacing: $ls;
 }
 
-@mixin make-before($c: "", $d: inline-block) {
+@mixin make-before($c: "", $d: block) {
   &:before {
     content: $c;
     display: $d;
@@ -193,7 +192,7 @@
   }
 }
 
-@mixin make-after($c: "", $d: inline-block) {
+@mixin make-after($c: "", $d: block) {
   &:after {
     content: $c;
     display: $d;
