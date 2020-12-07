@@ -38,23 +38,6 @@
   }
 }
 
-@mixin pos-abs-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-@mixin pos-abs-center-horizontal() {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@mixin pos-abs-center-vertical() {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 // translate
 @mixin translate(
   $t: 0,
@@ -117,41 +100,30 @@
   height: 100%;
 }
 
-@mixin flex-column($d: flex) {
-  display: $d;
-  flex-direction: column;
-  @content;
-}
-
 @mixin flex($d: flex) {
   display: $d;
   @content;
 }
 
-@mixin flex-item-center {
-  align-items: center;
-  justify-content: center;
+@mixin flex-y($d: flex) {
+  display: $d;
+  flex-direction: column;
+  @content;
 }
 
-@mixin flex-item-option($ai: null, $jc: null) {
+@mixin flex-op($ai: null, $jc: null) {
   align-items: $ai;
   justify-content: $jc;
 }
-@mixin width-height-padding($w, $h, $p) {
-  width: $w;
-  height: $h;
-  padding: $p;
-}
 
-@mixin flex-all-center {
-  display: flex;
+@mixin flex-center {
+  @include flex {
+    @include flex-item-center;
+  }
+
+@mixin flex-item-center {
   align-items: center;
   justify-content: center;
-  @content;
-}
-@mixin inline-block {
-  display: inline-block;
-  @content;
 }
 
 @mixin bg-url($path, $img, $op-default: false, $op-p: null, $op-s: null) {
@@ -230,7 +202,7 @@
   $h: 54px,
   $bd-wi: 1px,
   $bd-st: solid,
-  $bd-cl: #c5c5c5,
+  $bd-cl: null,
   $bd-rd: 6px,
   $bg-color: white
 ) {

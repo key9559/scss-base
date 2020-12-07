@@ -1,6 +1,6 @@
 // color: color(text);
 @function color($color) {
-  @return map-get($main-color, $color);
+  @return map-get($color-set, $color);
 }
 
 // image url setting
@@ -32,15 +32,15 @@
 
 $base-size: 16;
 
-@function remSize($target, $context: $base-size) {
+@function rem($target, $context: $base-size) {
   @return ($target / $context) * 1rem;
 }
 
-@function emSize($target, $context: $base-size) {
+@function em($target, $context: $base-size) {
   @return ($target / $context) * 1em;
 }
 
-@function childEmSize($target, $parent) {
+@function childEm($target, $parent) {
   @return ($target / $parent) * 1em;
 }
 
