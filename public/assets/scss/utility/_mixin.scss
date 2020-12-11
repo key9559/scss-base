@@ -120,6 +120,7 @@
   @include flex {
     @include flex-item-center;
   }
+}
 
 @mixin flex-item-center {
   align-items: center;
