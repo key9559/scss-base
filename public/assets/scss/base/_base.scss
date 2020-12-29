@@ -151,6 +151,7 @@ wbr {
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
+  word-break: keep-all;
   font-size: 16px;
   scroll-behavior: smooth;
 }
