@@ -30,7 +30,7 @@
 
   &-wrap--right {
     @include flex {
-      @include flex-item-option(center, flex-end);
+      @include flex-op(center, flex-end);
 
       flex-wrap: wrap;
     }
@@ -56,7 +56,7 @@
 
   &-double-wrap--side {
     @include flex {
-      @include flex-item-option(center, space-between);
+      @include flex-op(center, space-between);
     }
 
     .btn {
@@ -78,7 +78,7 @@
 
   &-fixed-wrap--double {
     @include flex {
-      @include flex-item-option(center, space-between);
+      @include flex-op(center, space-between);
     }
     @include fixed($b: 0);
     @include wh(100%, 50px);

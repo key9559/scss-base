@@ -1,5 +1,5 @@
 /* =================== helper =================== */
-.none {
+.is-none {
   display: none;
 }
 
@@ -90,14 +90,14 @@
 
 .flex-wrap {
   @include flex {
-    @include flex-item-option(center, space-between);
+    @include flex-op(center, space-between);
   }
 
   width: 100%;
 
   &--left {
     @include flex {
-      @include flex-item-option(center, flex-start);
+      @include flex-op(center, flex-start);
     }
 
     width: 100%;
@@ -113,14 +113,14 @@
 
   &--right {
     @include flex {
-      @include flex-item-option(center, flex-end);
+      @include flex-op(center, flex-end);
     }
 
     width: 100%;
   }
 
   &--vertical {
-    @include flex-column {
+    @include flex-col {
       @include flex-item-center();
     }
 

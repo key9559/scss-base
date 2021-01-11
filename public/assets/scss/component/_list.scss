@@ -29,7 +29,7 @@
 
   &--side {
     .list {
-      @include flex-item-option(center, space-between);
+      @include flex-op(center, space-between);
     }
 
     .list-title {
