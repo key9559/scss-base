@@ -1207,13 +1207,19 @@ html.ie .scroll-custom {
   position: fixed;
   top: 0;
   left: 100%;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  padding: 50px 0;
+  padding: 80px 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 10;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media all and (max-width: 600px) {
+  .com-hd__gnb-wrap {
+    width: 100%;
+  }
 }
 
 .com-hd__gnb-toggle:checked ~ .com-hd__gnb-icon .com-hd__gnb-line {
@@ -1234,7 +1240,7 @@ html.ie .scroll-custom {
 }
 
 .com-hd__gnb-toggle:checked ~ .com-hd__gnb-wrap {
-  left: 50%;
+  left: 0%;
 }
 
 .gnb-list__link {

@@ -54,12 +54,16 @@
 
   &__gnb-wrap {
     @include fixed($l: 100%);
-    @include wh(50%, 100%);
+    @include wh(100%, 100%);
 
-    padding: 50px 0;
+    padding: 80px 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: zIndex(header);
     transition: all 0.3s ease-in-out;
+
+    @include media(mb) {
+      width: 100%;
+    }
   }
 
   &__gnb-toggle:checked {
@@ -81,7 +85,7 @@
     }
 
     ~ .com-hd__gnb-wrap {
-      left: 50%;
+      left: 0%;
     }
   }
 }
