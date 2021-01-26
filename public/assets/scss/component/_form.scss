@@ -38,43 +38,13 @@
 }
 
 // star score
-.rate1 {
-  &:before {
-    content: "1.0";
-  }
-  &:after {
-    content: url("../../images/icon/icon_star1.svg");
-  }
-}
-.rate2 {
-  &:before {
-    content: "2.0";
-  }
-  &:after {
-    content: url("../../images/icon/icon_star2.svg");
-  }
-}
-.rate3 {
-  &:before {
-    content: "3.0";
-  }
-  &:after {
-    content: url("../../images/icon/icon_star3.svg");
-  }
-}
-.rate4 {
-  &:before {
-    content: "4.0";
-  }
-  &:after {
-    content: url("../../images/icon/icon_star4.svg");
-  }
-}
-.rate5 {
-  &:before {
-    content: "5.0";
-  }
-  &:after {
-    content: url("../../images/icon/icon_star5.svg");
+@for $i from 1 through 5 {
+  .rate#{$i} {
+    &:before {
+      content: "#{$i}"+".0";
+    }
+    &:after {
+      content: url("../../images/icon/icon_star" + "#{$i}" + ".svg");
+    }
   }
 }
