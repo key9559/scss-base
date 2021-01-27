@@ -1,6 +1,19 @@
 /* =================== helper =================== */
+// 노출되지 않을 영역
 .is-none {
   display: none;
+}
+
+// 보이진 않지만 리딩되는 영역
+.is-voice-only {
+  @include absolute($l: -9999rem);
+
+  font-size: 0;
+}
+
+// 영어, 숫자만 있는 콘텐츠
+.is-en {
+  letter-spacing: 0;
 }
 
 // 브라우저 크기별 레이아웃 보이기
@@ -62,22 +75,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-}
-
-// 반응형 이미지
-.respon-img {
-  &__box {
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-
-    img {
-      @include absolute;
-      @include wh(100%, 100%);
-
-      object-fit: cover;
-    }
   }
 }
 
