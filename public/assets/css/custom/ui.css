@@ -146,8 +146,65 @@ wbr {
           box-sizing: border-box;
   font-family: "helvatica", "noto", "spoqa", sans-serif;
   letter-spacing: -0.04em;
-  stroke-width: 0;
   word-break: break-all;
+}
+
+html,
+body,
+a,
+address,
+article,
+aside,
+b,
+button,
+dd,
+div,
+dl,
+dt,
+figcaption,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+i,
+input,
+ins,
+label,
+legend,
+li,
+main,
+menu,
+menuitem,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+section,
+select,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+tr,
+tspan,
+u,
+ul {
+  stroke-width: 0;
 }
 
 html {
@@ -400,6 +457,17 @@ table {
   display: none;
 }
 
+.is-voice-only {
+  position: absolute;
+  top: 0;
+  left: -9999rem;
+  font-size: 0;
+}
+
+.is-en {
+  letter-spacing: 0;
+}
+
 .is-tab-show {
   display: none;
 }
@@ -465,22 +533,6 @@ table {
 }
 
 .img-box__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.respon-img__box {
-  position: relative;
-  width: 100%;
-  padding-top: 50%;
-}
-
-.respon-img__box img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -810,7 +862,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-.btn-gra:hover {
+.btn-gra:hover, .btn-gra:focus {
   background-position-x: 100%;
 }
 

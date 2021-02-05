@@ -355,3 +355,55 @@
     url("../../fonts/poppins/Poppins-Thin.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Thin.otf") format("opentype");
 }
+
+/* ---------- roboto ---------- */
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 300;
+  src: local("roboto thin"), local("Roboto Thin"),
+    url("../../fonts/roboto/Roboto-Thin.woff2") format("woff2"),
+    url("../../fonts/roboto/Roboto-Thin.woff") format("woff"),
+    url("../../fonts/roboto/Roboto-Thin.ttf") format("truetype"),
+    url("../../fonts/roboto/Roboto-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  src: local("roboto regular"), local("Roboto Regular"),
+    url("../../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../../fonts/roboto/Roboto-Regular.woff") format("woff"),
+    url("../../fonts/roboto/Roboto-Regular.ttf") format("truetype"),
+    url("../../fonts/roboto/Roboto-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 500;
+  src: local("roboto medium"), local("Roboto Medium"),
+    url("../../fonts/roboto/Roboto-Medium.woff2") format("woff2"),
+    url("../../fonts/roboto/Roboto-Medium.woff") format("woff"),
+    url("../../fonts/roboto/Roboto-Medium.ttf") format("truetype"),
+    url("../../fonts/roboto/Roboto-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 600;
+  src: local("roboto bold"), local("Roboto Bold"),
+    url("../../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/roboto/Roboto-Bold.woff") format("woff"),
+    url("../../fonts/roboto/Roboto-Bold.ttf") format("truetype"),
+    url("../../fonts/roboto/Roboto-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 800;
+  src: local("roboto black"), local("Roboto Black"),
+    url("../../fonts/roboto/Roboto-Black.woff2") format("woff2"),
+    url("../../fonts/roboto/Roboto-Black.woff") format("woff"),
+    url("../../fonts/roboto/Roboto-Black.ttf") format("truetype"),
+    url("../../fonts/roboto/Roboto-Black.otf") format("opentype");
+}
