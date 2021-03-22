@@ -1,12 +1,12 @@
 // responsive Setting
-@mixin media($device, $range: max) {
+@mixin media-dv($device, $range: max) {
   @media all and (#{$range}-width: device($device, "key")) {
     @content;
   }
 }
 
 // responsive custom Setting
-@mixin media-custom($px, $range: max) {
+@mixin media($px, $range: max) {
   @media all and (#{$range}-width: $px) {
     @content;
   }
