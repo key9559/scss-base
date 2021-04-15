@@ -1,4 +1,41 @@
 /* =================== button =================== */
+// .btn-wrap .btn-fixed-wrap btn-double-wrap ...
+.btns-wrap {
+  @include flex {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin: 10px 0;
+    margin-left: 10px;
+    &:first-of-type {
+      margin-left: 0px;
+    }
+  }
+}
+
+.btns-wrap-double {
+  @include flex {
+    align-items: center;
+  }
+
+  .btn {
+    width: 50%;
+  }
+}
+
+.btns-wrap-fixed {
+  @include fixed($b: 0);
+  @include wh(100%, 50px);
+
+  z-index: zIndex(fixed);
+
+  .btn {
+    @include full;
+  }
+}
+
 .btn {
   @include input-reset;
   @include flex(inline-flex) {
@@ -7,87 +44,9 @@
 
   cursor: pointer;
 
-  &.is-disabled {
+  &:disabled {
     background-color: gray;
     cursor: default;
-  }
-
-  // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
-  &-wrap {
-    @include flex {
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      margin: 10px 0;
-      margin-left: 10px;
-      &:first-of-type {
-        margin-left: 0px;
-      }
-    }
-  }
-
-  &-wrap--right {
-    @include flex {
-      @include flex-op(center, flex-end);
-
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      margin: 10px 0;
-      margin-left: 10px;
-      &:first-of-type {
-        margin-left: 0px;
-      }
-    }
-  }
-
-  &-double-wrap {
-    @include flex {
-      align-items: center;
-    }
-
-    .btn {
-      width: 50%;
-    }
-  }
-
-  &-double-wrap--side {
-    @include flex {
-      @include flex-op(center, space-between);
-    }
-
-    .btn {
-      width: 48%;
-    }
-  }
-
-  &-fixed-wrap {
-    @include fixed($b: 0);
-    @include wh(100%, 50px);
-
-    z-index: zIndex(fixed);
-
-    .btn {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  &-fixed-wrap--double {
-    @include flex {
-      @include flex-op(center, space-between);
-    }
-    @include fixed($b: 0);
-    @include wh(100%, 50px);
-
-    z-index: zIndex(fixed);
-
-    .btn {
-      @include wh(50%, 100%);
-    }
   }
 
   // button style
@@ -100,16 +59,7 @@
     border-radius: 50%;
   }
 
-  // 키워드별 버튼 높이에 따라 조정해서 사용
   &-round {
-    border-radius: 25px;
-  }
-
-  &-round.btn-ht-sm {
-    border-radius: 15px;
-  }
-
-  &-round.btn-ht-lg {
     border-radius: 30px;
   }
 
@@ -124,20 +74,13 @@
 
 // 버튼 높이
 @each $name, $height in $btn-height {
-  .btn-ht-#{$name} {
+  .btn-#{$name} {
     height: $height + px;
   }
 }
 
-// 버튼 위드
-@each $name, $width in $btn-width {
-  .btn-wi-#{$name} {
-    width: $width + px;
-  }
-}
-
-.btn-wi-100 {
-  width: 100%;
+.btn-full {
+  @include full;
 }
 
 // 버튼 색
@@ -170,8 +113,6 @@
 }
 
 // 소셜 버튼
-// icon button: btn btn-circle btn-kakao
-// text button: btn btn-kakao
 .socail-btn-wrap {
   flex-wrap: wrap;
   .btn {
@@ -193,3 +134,16 @@
 .btn-kakao {
   color: #2b1718;
 }
+
+// 아이콘 버튼
+.btn-icon {
+  @include input-reset;
+  @include wh(50px, 50px);
+  @include bg-op;
+}
+
+// 가능 버튼
+// .btn-back {
+//   @extend .btn-icon;
+//   @include bg-url();
+// }

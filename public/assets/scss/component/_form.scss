@@ -1,39 +1,27 @@
 /* =================== form =================== */
+.input-wrap {
+  width: 100%;
+}
+
 .input {
   @include input-reset;
+  @include input-style();
+}
 
+.input-tarea {
+  @include input-reset;
+
+  height: 400px;
   resize: none;
+}
 
-  // input은 무조건 input-wrap안에 사용
-  &-wrap {
-    width: 100%;
-  }
+.input-round {
+  @include input-style($bd-rd: 25px);
+}
 
-  // input text: class="input input-style"
-  &-style {
-    @include input-style();
-
-    // input-style--round
-    &--round {
-      @include input-style($bd-rd: 25px);
-    }
-
-    // input-style--underbar
-    &--underbar {
-      @include input-style($bd-wi: 0, $bd-rd: 0) {
-        border-bottom: 1px;
-      }
-    }
-  }
-
-  // textarea: class="input input-style input-tarea"
-  &-tarea {
-    height: 200px;
-  }
-
-  // select: class="input input-style input-selec"
-  &-selec {
-    cursor: pointer;
+.input-underbar {
+  @include input-style($bd-wi: 0, $bd-rd: 0) {
+    border-bottom: 1px;
   }
 }
 

@@ -69,60 +69,11 @@
   }
 }
 
-// image
-.img-box {
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 // flexible content wrap
 .clear:after {
   content: "";
   display: block;
   clear: both;
-}
-
-.flex-wrap {
-  @include flex {
-    @include flex-op(center, space-between);
-  }
-
-  width: 100%;
-
-  &--left {
-    @include flex {
-      @include flex-op(center, flex-start);
-    }
-
-    width: 100%;
-  }
-
-  &--center {
-    @include flex {
-      @include flex-item-center();
-    }
-
-    width: 100%;
-  }
-
-  &--right {
-    @include flex {
-      @include flex-op(center, flex-end);
-    }
-
-    width: 100%;
-  }
-
-  &--vertical {
-    @include flex-col {
-      @include flex-item-center();
-    }
-
-    width: 100%;
-  }
 }
 
 // scroll custom element에 height 지정 필수

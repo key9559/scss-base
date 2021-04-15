@@ -4,8 +4,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 800;
-  src: local("noto sans kr black"), local("Noto Sans KR Black"),
-    url("../../fonts/notosanskr/NotoSansKR-Black.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Black.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Black.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Black.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Black.otf") format("opentype");
@@ -14,8 +13,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 600;
-  src: local("noto sans kr bold"), local("Noto Sans KR Bold"),
-    url("../../fonts/notosanskr/NotoSansKR-Bold.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Bold.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Bold.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Bold.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Bold.otf") format("opentype");
@@ -24,8 +22,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 500;
-  src: local("noto sans kr medium"), local("Noto Sans KR Medium"),
-    url("../../fonts/notosanskr/NotoSansKR-Medium.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Medium.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Medium.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Medium.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Medium.otf") format("opentype");
@@ -34,8 +31,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 400;
-  src: local("noto sans kr regular"), local("Noto Sans KR Regular"),
-    url("../../fonts/notosanskr/NotoSansKR-Regular.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Regular.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Regular.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Regular.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Regular.otf") format("opentype");
@@ -44,8 +40,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 300;
-  src: local("noto sans kr light"), local("Noto Sans KR Light"),
-    url("../../fonts/notosanskr/NotoSansKR-Light.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Light.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Light.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Light.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Light.otf") format("opentype");
@@ -54,8 +49,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 200;
-  src: local("noto sans kr demilight"), local("Noto Sans KR DemiLight"),
-    url("../../fonts/notosanskr/NotoSansKR-DemiLight.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-DemiLight.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-DemiLight.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-DemiLight.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-DemiLight.otf") format("opentype");
@@ -64,8 +58,7 @@
 @font-face {
   font-family: "noto";
   font-weight: 100;
-  src: local("noto sans kr thin"), local("Noto Sans KR Thin"),
-    url("../../fonts/notosanskr/NotoSansKR-Thin.woff2") format("woff2"),
+  src: url("../../fonts/notosanskr/NotoSansKR-Thin.woff2") format("woff2"),
     url("../../fonts/notosanskr/NotoSansKR-Thin.woff") format("woff"),
     url("../../fonts/notosanskr/NotoSansKR-Thin.ttf") format("truetype"),
     url("../../fonts/notosanskr/NotoSansKR-Thin.otf") format("opentype");
@@ -76,8 +69,7 @@
 @font-face {
   font-family: "helvatica";
   font-weight: 800;
-  src: local("helvatica neue hv"), local("Helvatica Neue Hv"),
-    url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Hv.woff2")
+  src: url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Hv.woff2")
       format("woff2"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Hv.woff") format("woff"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Hv.ttf")
@@ -89,8 +81,7 @@
 @font-face {
   font-family: "helvatica";
   font-weight: 600;
-  src: local("helvatica neue bd"), local("Helvatica Neue Bd"),
-    url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Bd.woff2")
+  src: url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Bd.woff2")
       format("woff2"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Bd.woff") format("woff"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Bd.ttf")
@@ -102,8 +93,7 @@
 @font-face {
   font-family: "helvatica";
   font-weight: 400;
-  src: local("helvatica neue roman"), local("Helvatica Neue Roman"),
-    url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.woff2")
+  src: url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.woff2")
       format("woff2"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Roman.woff")
       format("woff"),
@@ -116,8 +106,7 @@
 @font-face {
   font-family: "helvatica";
   font-weight: 300;
-  src: local("helvatica neue lt"), local("Helvatica Neue Lt"),
-    url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff2")
+  src: url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff2")
       format("woff2"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.woff") format("woff"),
     url("../../fonts/Helvetica_Neue/HelveticaNeueLTStd-Lt.ttf")
@@ -131,8 +120,7 @@
 @font-face {
   font-family: "open sans";
   font-weight: 800;
-  src: local("open sans"), local("open sans extra bold"),
-    url("../../fonts/open_sans/OpenSans-ExtraBold.woff2") format("woff2"),
+  src: url("../../fonts/open_sans/OpenSans-ExtraBold.woff2") format("woff2"),
     url("../../fonts/open_sans/OpenSans-ExtraBold.woff") format("woff"),
     url("../../fonts/open_sans/OpenSans-ExtraBold.ttf") format("truetype"),
     url("../../fonts/open_sans/OpenSans-ExtraBold.otf") format("opentype");
@@ -141,8 +129,7 @@
 @font-face {
   font-family: "open sans";
   font-weight: 700;
-  src: local("open sans"), local("open sans bold"),
-    url("../../fonts/open_sans/OpenSans-Bold.woff2") format("woff2"),
+  src: url("../../fonts/open_sans/OpenSans-Bold.woff2") format("woff2"),
     url("../../fonts/open_sans/OpenSans-Bold.woff") format("woff"),
     url("../../fonts/open_sans/OpenSans-Bold.ttf") format("truetype"),
     url("../../fonts/open_sans/OpenSans-Bold.otf") format("opentype");
@@ -151,8 +138,7 @@
 @font-face {
   font-family: "open sans";
   font-weight: 600;
-  src: local("open sans"), local("open sans semibold"),
-    url("../../fonts/open_sans/OpenSans-SemiBold.woff2") format("woff2"),
+  src: url("../../fonts/open_sans/OpenSans-SemiBold.woff2") format("woff2"),
     url("../../fonts/open_sans/OpenSans-SemiBold.woff") format("woff"),
     url("../../fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype"),
     url("../../fonts/open_sans/OpenSans-SemiBold.otf") format("opentype");
@@ -161,8 +147,7 @@
 @font-face {
   font-family: "open sans";
   font-weight: 400;
-  src: local("open sans"), local("open sans regular"),
-    url("../../fonts/open_sans/OpenSans-Regular.woff2") format("woff2"),
+  src: url("../../fonts/open_sans/OpenSans-Regular.woff2") format("woff2"),
     url("../../fonts/open_sans/OpenSans-Regular.woff") format("woff"),
     url("../../fonts/open_sans/OpenSans-Regular.ttf") format("truetype"),
     url("../../fonts/open_sans/OpenSans-Regular.otf") format("opentype");
@@ -171,8 +156,7 @@
 @font-face {
   font-family: "open sans";
   font-weight: 300;
-  src: local("open sans"), local("open sans light"),
-    url("../../fonts/open_sans/OpenSans-Light.woff2") format("woff2"),
+  src: url("../../fonts/open_sans/OpenSans-Light.woff2") format("woff2"),
     url("../../fonts/open_sans/OpenSans-Light.woff") format("woff"),
     url("../../fonts/open_sans/OpenSans-Light.ttf") format("truetype"),
     url("../../fonts/open_sans/OpenSans-Light.otf") format("opentype");
@@ -183,8 +167,7 @@
 @font-face {
   font-family: "nanum square";
   font-weight: 800;
-  src: local("nanum square"), local("nanum square extra bold"),
-    url("../../fonts/nanumsquare/NanumSquare_acEB.woff2") format("woff2"),
+  src: url("../../fonts/nanumsquare/NanumSquare_acEB.woff2") format("woff2"),
     url("../../fonts/nanumsquare/NanumSquare_acEB.woff") format("woff"),
     url("../../fonts/nanumsquare/NanumSquare_acEB.ttf") format("truetype"),
     url("../../fonts/nanumsquare/NanumSquare_acEB.otf") format("opentype");
@@ -193,8 +176,7 @@
 @font-face {
   font-family: "nanum square";
   font-weight: 600;
-  src: local("nanum square"), local("nanum square bold"),
-    url("../../fonts/nanumsquare/NanumSquare_acB.woff2") format("woff2"),
+  src: url("../../fonts/nanumsquare/NanumSquare_acB.woff2") format("woff2"),
     url("../../fonts/nanumsquare/NanumSquare_acB.woff") format("woff"),
     url("../../fonts/nanumsquare/NanumSquare_acB.ttf") format("truetype"),
     url("../../fonts/nanumsquare/NanumSquare_acB.otf") format("opentype");
@@ -203,8 +185,7 @@
 @font-face {
   font-family: "nanum square";
   font-weight: 400;
-  src: local("nanum square"), local("nanum square regular"),
-    url("../../fonts/nanumsquare/NanumSquare_acR.woff2") format("woff2"),
+  src: url("../../fonts/nanumsquare/NanumSquare_acR.woff2") format("woff2"),
     url("../../fonts/nanumsquare/NanumSquare_acR.woff") format("woff"),
     url("../../fonts/nanumsquare/NanumSquare_acR.ttf") format("truetype"),
     url("../../fonts/nanumsquare/NanumSquare_acR.otf") format("opentype");
@@ -213,8 +194,7 @@
 @font-face {
   font-family: "nanum square";
   font-weight: 300;
-  src: local("nanum square"), local("nanum square light"),
-    url("../../fonts/nanumsquare/NanumSquare_acL.woff2") format("woff2"),
+  src: url("../../fonts/nanumsquare/NanumSquare_acL.woff2") format("woff2"),
     url("../../fonts/nanumsquare/NanumSquare_acL.woff") format("woff"),
     url("../../fonts/nanumsquare/NanumSquare_acL.ttf") format("truetype"),
     url("../../fonts/nanumsquare/NanumSquare_acL.otf") format("opentype");
@@ -225,8 +205,7 @@
 @font-face {
   font-family: "spoqa";
   font-weight: 600;
-  src: local("spoqa han sans neo bold"), local("Spoqa Han Sans Neo Bold"),
-    url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Bold.woff2")
+  src: url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Bold.woff2")
       format("woff2"),
     url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Bold.woff")
       format("woff"),
@@ -239,8 +218,7 @@
 @font-face {
   font-family: "spoqa";
   font-weight: 500;
-  src: local("spoqa han sans neo medium"), local("Spoqa Han Sans Neo Medium"),
-    url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Medium.woff2")
+  src: url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Medium.woff2")
       format("woff2"),
     url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Medium.woff")
       format("woff"),
@@ -253,8 +231,7 @@
 @font-face {
   font-family: "spoqa";
   font-weight: 400;
-  src: local("spoqa han sans neo regular"), local("Spoqa Han Sans Neo Regular"),
-    url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Regular.woff2")
+  src: url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Regular.woff2")
       format("woff2"),
     url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Regular.woff")
       format("woff"),
@@ -267,8 +244,7 @@
 @font-face {
   font-family: "spoqa";
   font-weight: 300;
-  src: local("spoqa han sans neo light"), local("Spoqa Han Sans Neo Light"),
-    url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Light.woff2")
+  src: url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Light.woff2")
       format("woff2"),
     url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Light.woff")
       format("woff"),
@@ -281,8 +257,7 @@
 @font-face {
   font-family: "spoqa";
   font-weight: 100;
-  src: local("spoqa han sans neo thin"), local("Spoqa Han Sans Neo Thin"),
-    url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Thin.woff2")
+  src: url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Thin.woff2")
       format("woff2"),
     url("../../fonts/SpoqaHanSansNeo/Spoqa_Han_Sans_Neo_Thin.woff")
       format("woff"),
@@ -297,8 +272,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 900;
-  src: local("poppins-Black"), local("poppins-Black"),
-    url("../../fonts/poppins/Poppins-Black.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Black.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Black.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Black.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Black.otf") format("opentype");
@@ -307,8 +281,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 800;
-  src: local("poppins-ExtraBold"), local("poppins-ExtraBold"),
-    url("../../fonts/poppins/Poppins-ExtraBold.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-ExtraBold.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-ExtraBold.woff") format("woff"),
     url("../../fonts/poppins/Poppins-ExtraBold.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-ExtraBold.otf") format("opentype");
@@ -317,8 +290,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 700;
-  src: local("poppins-Bold"), local("poppins-Bold"),
-    url("../../fonts/poppins/Poppins-Bold.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Bold.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Bold.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Bold.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Bold.otf") format("opentype");
@@ -327,8 +299,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 600;
-  src: local("poppins-SemiBold"), local("poppins-SemiBold"),
-    url("../../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-SemiBold.woff") format("woff"),
     url("../../fonts/poppins/Poppins-SemiBold.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-SemiBold.otf") format("opentype");
@@ -337,8 +308,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 500;
-  src: local("poppins-Medium"), local("poppins-Medium"),
-    url("../../fonts/poppins/Poppins-Medium.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Medium.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Medium.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Medium.otf") format("opentype");
@@ -347,8 +317,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 400;
-  src: local("poppins-Regular"), local("poppins-Regular"),
-    url("../../fonts/poppins/Poppins-Regular.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Regular.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Regular.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Regular.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Regular.otf") format("opentype");
@@ -357,8 +326,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 300;
-  src: local("poppins-Light"), local("poppins-Light"),
-    url("../../fonts/poppins/Poppins-Light.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Light.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Light.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Light.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Light.otf") format("opentype");
@@ -367,8 +335,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 200;
-  src: local("poppins-ExtraLight"), local("poppins-ExtraLight"),
-    url("../../fonts/poppins/Poppins-ExtraLight.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-ExtraLight.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-ExtraLight.woff") format("woff"),
     url("../../fonts/poppins/Poppins-ExtraLight.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-ExtraLight.otf") format("opentype");
@@ -377,8 +344,7 @@
 @font-face {
   font-family: "poppins";
   font-weight: 100;
-  src: local("poppins-Thin"), local("poppins-Thin"),
-    url("../../fonts/poppins/Poppins-Thin.woff2") format("woff2"),
+  src: url("../../fonts/poppins/Poppins-Thin.woff2") format("woff2"),
     url("../../fonts/poppins/Poppins-Thin.woff") format("woff"),
     url("../../fonts/poppins/Poppins-Thin.ttf") format("truetype"),
     url("../../fonts/poppins/Poppins-Thin.otf") format("opentype");
@@ -389,8 +355,7 @@
 @font-face {
   font-family: "roboto";
   font-weight: 300;
-  src: local("roboto thin"), local("Roboto Thin"),
-    url("../../fonts/roboto/Roboto-Thin.woff2") format("woff2"),
+  src: url("../../fonts/roboto/Roboto-Thin.woff2") format("woff2"),
     url("../../fonts/roboto/Roboto-Thin.woff") format("woff"),
     url("../../fonts/roboto/Roboto-Thin.ttf") format("truetype"),
     url("../../fonts/roboto/Roboto-Thin.otf") format("opentype");
@@ -399,8 +364,7 @@
 @font-face {
   font-family: "roboto";
   font-weight: 400;
-  src: local("roboto regular"), local("Roboto Regular"),
-    url("../../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+  src: url("../../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
     url("../../fonts/roboto/Roboto-Regular.woff") format("woff"),
     url("../../fonts/roboto/Roboto-Regular.ttf") format("truetype"),
     url("../../fonts/roboto/Roboto-Regular.otf") format("opentype");
@@ -409,8 +373,7 @@
 @font-face {
   font-family: "roboto";
   font-weight: 500;
-  src: local("roboto medium"), local("Roboto Medium"),
-    url("../../fonts/roboto/Roboto-Medium.woff2") format("woff2"),
+  src: url("../../fonts/roboto/Roboto-Medium.woff2") format("woff2"),
     url("../../fonts/roboto/Roboto-Medium.woff") format("woff"),
     url("../../fonts/roboto/Roboto-Medium.ttf") format("truetype"),
     url("../../fonts/roboto/Roboto-Medium.otf") format("opentype");
@@ -419,8 +382,7 @@
 @font-face {
   font-family: "roboto";
   font-weight: 600;
-  src: local("roboto bold"), local("Roboto Bold"),
-    url("../../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+  src: url("../../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
     url("../../fonts/roboto/Roboto-Bold.woff") format("woff"),
     url("../../fonts/roboto/Roboto-Bold.ttf") format("truetype"),
     url("../../fonts/roboto/Roboto-Bold.otf") format("opentype");
@@ -429,8 +391,7 @@
 @font-face {
   font-family: "roboto";
   font-weight: 800;
-  src: local("roboto black"), local("Roboto Black"),
-    url("../../fonts/roboto/Roboto-Black.woff2") format("woff2"),
+  src: url("../../fonts/roboto/Roboto-Black.woff2") format("woff2"),
     url("../../fonts/roboto/Roboto-Black.woff") format("woff"),
     url("../../fonts/roboto/Roboto-Black.ttf") format("truetype"),
     url("../../fonts/roboto/Roboto-Black.otf") format("opentype");

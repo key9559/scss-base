@@ -224,11 +224,15 @@
   }
 }
 
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
+@mixin hover {
+  @include media(600px, min) {
+    &:hover {
+      @content;
+    }
+  }
+
+  &:focus {
+    @content;
   }
 }
 
