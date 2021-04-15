@@ -37,6 +37,7 @@
 
 <body>
   <div class="header-wrap">
+    <!-- input type -->
     <header class="com-hd">
       <div class="com-hd__con-wrap l-center">
         <h1 class="com-hd__logo-wrap">
@@ -51,6 +52,34 @@
             <span class="com-hd__gnb-line gnb-line2">-</span>
             <span class="com-hd__gnb-line gnb-line3">-</span>
           </label>
+          <div class="com-hd__gnb-wrap">
+            <div class="l-center">
+              <ul class="com-hd__gnb-list-wrap">
+                <li class="com-hd__gnb-list gnb-list">
+                  <a href="#" class="gnb-list__link">
+                    link
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- button type -->
+    <header class="com-hd">
+      <div class="com-hd__con-wrap l-center">
+        <h1 class="com-hd__logo-wrap">
+          <a href="#" class="com-hd__logo-link">
+            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="com-hd__logo" />
+          </a>
+        </h1>
+        <div class="com-hd__gnb-wrapper">
+          <button type="button" class="com-hd__gnb-icon">
+            <span class="com-hd__gnb-line gnb-line1">-</span>
+            <span class="com-hd__gnb-line gnb-line2">-</span>
+            <span class="com-hd__gnb-line gnb-line3">-</span>
+          </button>
           <div class="com-hd__gnb-wrap">
             <div class="l-center">
               <ul class="com-hd__gnb-list-wrap">
@@ -163,60 +192,6 @@
             <span class="is-mo-sm-hide">
               320px에서부터 가리기
             </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="l-center respon-img-guide">
-      <div class="desc">
-        반응형 이미지 만들기<br />
-        .respon-img > .respon-img__box > img<br />
-        수정전은 2:1비율
-      </div>
-      <div class="respon-img">
-        <div class="respon-img__box">
-          <img src="http://loremflickr.com/1000/100/dog" alt="img" />
-        </div>
-      </div>
-    </div>
-    <div class="l-center flexbox-guide">
-      <div class="desc">
-        플렉스 컨텐츠들의 정렬은 flex-wrap을 이용하여 맞춘다.
-      </div>
-      <ul class="list-wrap--underline">
-        <li class="list">
-          <div class="flex-wrap">
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="flex-wrap--left">
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="flex-wrap--center">
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="flex-wrap--right">
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="flex-wrap--vertical">
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
-            <div class="flex-items"></div>
           </div>
         </li>
       </ul>
@@ -514,7 +489,7 @@
               </div>
               <div class="list-desc">
                 <div class="input-wrap">
-                  <input type="text" class="input input-style input-txt" placeholder="입력" />
+                  <input type="text" class="input" placeholder="입력" />
                 </div>
               </div>
             </li>
@@ -524,7 +499,7 @@
               </div>
               <div class="list-desc">
                 <div class="input-wrap">
-                  <select class="input input-style input-selec">
+                  <select class="input">
                     <option value="1">1</option>
                     <option value="2">2</option>
                   </select>
@@ -537,7 +512,7 @@
               </div>
               <div class="list-desc">
                 <div class="input-wrap">
-                  <textarea class="input input-style input-tarea scroll-custom" placeholder="입력"></textarea>
+                  <textarea class="input-tarea scroll-custom" placeholder="입력"></textarea>
                 </div>
               </div>
             </li>

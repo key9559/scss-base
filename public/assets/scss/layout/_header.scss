@@ -31,6 +31,7 @@
       @include flex-op(center, center);
     }
     @include wh(100%, 100%);
+    @include input-reset;
 
     position: relative;
     cursor: pointer;
