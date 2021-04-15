@@ -131,19 +131,19 @@
   background-image: urlPath($path, $img);
 
   @if ($op-default) {
-    @include bg-option;
+    @include bg-op;
   }
 
   @if $op-p and $op-s {
-    @include bg-option($p: $op-p, $s: $op-s);
+    @include bg-op($p: $op-p, $s: $op-s);
   } @else if $op-p {
-    @include bg-option($p: $op-p);
+    @include bg-op($p: $op-p);
   } @else if $op-s {
-    @include bg-option($s: $op-s);
+    @include bg-op($s: $op-s);
   }
 }
 
-@mixin bg-option($p: center, $s: cover, $r: no-repeat) {
+@mixin bg-op($p: center, $s: cover, $r: no-repeat) {
   background-position: $p;
   background-size: $s;
   background-repeat: $r;
