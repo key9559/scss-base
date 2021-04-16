@@ -31,29 +31,23 @@
 <body>
   <div class="header-wrap">
     <header class="com-hd">
-      <div class="com-hd__con-wrap l-center">
-        <h1 class="com-hd__logo-wrap">
-          <a href="#" class="com-hd__logo-link">
-            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="com-hd__logo" />
+      <div class="com-hd-wrap l-center">
+        <h1 class="com-logo">
+          <a href="#" class="link">
+            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="logo-img" />
           </a>
         </h1>
-        <div class="com-hd__gnb-wrapper">
-          <!-- <input type="checkbox" id="gnb" name="gnb" class="com-hd__gnb-toggle is-none" />
-          <label for="gnb" class="com-hd__gnb-icon">
-            <span class="com-hd__gnb-line gnb-line1">-</span>
-            <span class="com-hd__gnb-line gnb-line2">-</span>
-            <span class="com-hd__gnb-line gnb-line3">-</span>
-          </label> -->
-          <button type="button" class="com-hd__gnb-icon">
-            <span class="com-hd__gnb-line gnb-line1">-</span>
-            <span class="com-hd__gnb-line gnb-line2">-</span>
-            <span class="com-hd__gnb-line gnb-line3">-</span>
+        <div class="hd-gnb-wrap">
+          <button type="button" class="gnb-btn">
+            <span class="gnb-line gnb-line1">-</span>
+            <span class="gnb-line gnb-line2">-</span>
+            <span class="gnb-line gnb-line3">-</span>
           </button>
-          <div class="com-hd__gnb-wrap">
-            <div class="l-center">
-              <ul class="com-hd__gnb-list-wrap">
-                <li class="com-hd__gnb-list gnb-list">
-                  <a href="#" class="gnb-list__link">
+          <div class="gnb-menu-wrap">
+            <div class="gnb-inner">
+              <ul class="gnb-list-wrap">
+                <li class="gnb-list">
+                  <a href="#" class="link">
                     link
                   </a>
                 </li>
@@ -69,17 +63,31 @@
       <div class="section-title">
         비어있는 컨텐츠
       </div>
-      <div class="empty-content">
-        <div class="empty-content__txt">검색 결과가 없습니다.</div>
-      </div>
-    </div>
-    <div class="l-center empty-guide">
-      <div class="empty-content">
-        <div class="empty-content__img-box">
-          <img src="https://loremflickr.com/200/100/dog" alt="empty content icon" />
-        </div>
-        <div class="empty-content__txt">등록된 정보가 없습니다.</div>
-      </div>
+      <ul class="list-wrap">
+        <li class="list">
+          <div class="list-title">
+            글자만 있는 버전
+          </div>
+          <div class="list-desc">
+            <div class="empty-content">
+              <div class="empty-content__txt">검색 결과가 없습니다.</div>
+            </div>
+          </div>
+        </li>
+        <li class="list">
+          <div class="list-title">
+            아이콘이 있는 버전
+          </div>
+          <div class="list-desc">
+            <div class="empty-content">
+              <div class="empty-content__img-box">
+                <img src="https://loremflickr.com/200/100/dog" alt="empty content icon" />
+              </div>
+              <div class="empty-content__txt">등록된 정보가 없습니다.</div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="l-center show-guide guide-wrap">
       <div class="section-title">
@@ -430,6 +438,48 @@
       </ul>
     </div>
   </div>
+  <footer class="com-ft">
+    <div class="l-center">
+      <div class="ft-link-wrap">
+        <a href="#" class="link">개인정보 처리방침</a>
+        <a href="#" class="link">이용약관</a>
+        <a href="#" class="link">뭐다른링크</a>
+      </div>
+      <div class="ft-logo-wrap">
+        <h2 class="com-logo">
+          <a href="#" class="link">
+            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="logo-img" />
+          </a>
+        </h2>
+      </div>
+      <div class="ft-info-wrap">
+        <ul class="ft-list-wrap">
+          <li class="ft-list">
+            <span class="tit">대표</span>
+            <span class="dec">대표명</span>
+          </li>
+          <li class="ft-list dot">
+            <span class="tit">주소</span>
+            <span class="dec">대한민국 무슨시 어쩌구 저쩌동</span>
+          </li>
+          <li class="ft-list bar">
+            <span class="tit">연락처</span>
+            <span class="dec">010-2345-6789</span>
+          </li>
+          <li class="ft-list inline">
+            <span class="tit">궁시렁 번호</span>
+            <span class="dec">123-45-67890</span>
+          </li>
+          <li class="ft-list inline">
+            <span class="tit">궁시렁 번호2</span>
+            <span class="dec">123-45-67890</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/custom/ui.js"></script>
 </body>
 
 </html>
