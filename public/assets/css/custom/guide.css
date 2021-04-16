@@ -1,8 +1,14 @@
-.l-center {
-  margin: 20px auto;
-  border: 1px solid #e6e6e6;
-  border-radius: 10px;
-  padding: 20px;
+.guide {
+  padding: 100px 0;
+}
+
+.section-title {
+  padding: 10px 0;
+  margin: 10px 0;
+  background-color: #cdcdcd;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .desc {
@@ -12,12 +18,74 @@
 
 .scroll-guide .scroll-custom {
   height: 100px;
+  padding: 20px;
   background-color: #f5f5f5;
-  text-align: center;
 }
 
 .flex-items {
   width: 100px;
   height: 50px;
   border: 1px solid red;
+}
+
+.list-wrap {
+  border: 1px solid #cdcdcd;
+}
+
+.list-wrap .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.list-wrap .list:first-child {
+  border: 0;
+}
+
+.list-wrap .list-title {
+  width: 250px;
+}
+
+.list-wrap .list-desc {
+  width: 100%;
+}
+
+.show-guide .list {
+  height: 60px;
+}
+
+.write-rating .rating__score {
+  height: 20px;
+  opacity: 1;
+  background-color: beige;
+}
+
+.btn-guide .list-desc {
+  position: relative;
+}
+
+.btn-guide .btns-wrap-fixed {
+  position: absolute;
+  top: -25px;
+  bottom: auto;
+  left: 0;
+}
+
+.btn-guide .btns-wrap-doublefix {
+  position: absolute;
+  top: -25px;
+  bottom: auto;
+  left: 0;
+}
+
+.btn {
+  width: 300px;
 }

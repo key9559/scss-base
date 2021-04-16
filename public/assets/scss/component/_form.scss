@@ -5,13 +5,15 @@
 
 .input {
   @include input-reset;
-  @include input-style();
+  @include input-style;
 }
 
 .input-tarea {
   @include input-reset;
+  @include input-style;
+  @include wh(100%, 500px);
 
-  height: 400px;
+  padding: 20px;
   resize: none;
 }
 
@@ -20,8 +22,8 @@
 }
 
 .input-underbar {
-  @include input-style($bd-wi: 0, $bd-rd: 0) {
-    border-bottom: 1px;
+  @include input-style($bd-st: none, $bd-rd: 0) {
+    border-bottom: 1px solid;
   }
 }
 

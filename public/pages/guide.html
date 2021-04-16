@@ -25,19 +25,11 @@
 
   <link rel="stylesheet" href="../assets/css/custom/ui.css" />
   <!-- 가이드 페이지에만 사용 -->
-  <link rel="stylesheet" href="../assets/css/guide.css" />
-  <style>
-    .write-rating .rating__score {
-      height: 20px;
-      opacity: 1;
-      background-color: beige;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/custom/guide.css" />
 </head>
 
 <body>
   <div class="header-wrap">
-    <!-- input type -->
     <header class="com-hd">
       <div class="com-hd__con-wrap l-center">
         <h1 class="com-hd__logo-wrap">
@@ -46,35 +38,12 @@
           </a>
         </h1>
         <div class="com-hd__gnb-wrapper">
-          <input type="checkbox" id="gnb" name="gnb" class="com-hd__gnb-toggle is-none" />
+          <!-- <input type="checkbox" id="gnb" name="gnb" class="com-hd__gnb-toggle is-none" />
           <label for="gnb" class="com-hd__gnb-icon">
             <span class="com-hd__gnb-line gnb-line1">-</span>
             <span class="com-hd__gnb-line gnb-line2">-</span>
             <span class="com-hd__gnb-line gnb-line3">-</span>
-          </label>
-          <div class="com-hd__gnb-wrap">
-            <div class="l-center">
-              <ul class="com-hd__gnb-list-wrap">
-                <li class="com-hd__gnb-list gnb-list">
-                  <a href="#" class="gnb-list__link">
-                    link
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- button type -->
-    <header class="com-hd">
-      <div class="com-hd__con-wrap l-center">
-        <h1 class="com-hd__logo-wrap">
-          <a href="#" class="com-hd__logo-link">
-            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="com-hd__logo" />
-          </a>
-        </h1>
-        <div class="com-hd__gnb-wrapper">
+          </label> -->
           <button type="button" class="com-hd__gnb-icon">
             <span class="com-hd__gnb-line gnb-line1">-</span>
             <span class="com-hd__gnb-line gnb-line2">-</span>
@@ -95,10 +64,13 @@
       </div>
     </header>
   </div>
-  <div class="main">
+  <div class="guide">
     <div class="l-center empty-guide">
+      <div class="section-title">
+        비어있는 컨텐츠
+      </div>
       <div class="empty-content">
-        <div class="empty-content__txt">비어있는 컨텐츠 글자만 있는 버전</div>
+        <div class="empty-content__txt">검색 결과가 없습니다.</div>
       </div>
     </div>
     <div class="l-center empty-guide">
@@ -106,14 +78,14 @@
         <div class="empty-content__img-box">
           <img src="https://loremflickr.com/200/100/dog" alt="empty content icon" />
         </div>
-        <div class="empty-content__txt">비어있는 컨텐츠 아이콘은 이미지로 대체</div>
+        <div class="empty-content__txt">등록된 정보가 없습니다.</div>
       </div>
     </div>
-    <div class="l-center window-show-guide">
-      <div class="desc">
+    <div class="l-center show-guide guide-wrap">
+      <div class="section-title">
         윈도우 해상도별 숨겨지거나 보이는 레이아웃
       </div>
-      <ul class="list-wrap--underline">
+      <ul class="list-wrap">
         <li class="list">
           <div class="list-title">
             탭에서부터 보이기
@@ -156,21 +128,21 @@
         </li>
         <li class="list">
           <div class="list-title">
-            모바일 작은사이즈에서부터 보이기
+            360px에서부터 보이기
           </div>
           <div class="list-desc">
             <span class="is-mo-sm-show">
-              모바일 작은사이즈에서부터 보이기
+              360px에서부터 보이기
             </span>
           </div>
         </li>
         <li class="list">
           <div class="list-title">
-            모바일 작은사이즈에서부터 가리기
+            60px에서부터 가리기
           </div>
           <div class="list-desc">
             <span class="is-mo-sm-hide">
-              모바일 작은사이즈에서부터 가리기
+              60px에서부터 가리기
             </span>
           </div>
         </li>
@@ -196,38 +168,43 @@
         </li>
       </ul>
     </div>
-    <div class="l-center scroll-guide">
+    <div class="l-center scroll-guide guide-wrap">
+      <div class="section-title">
+        스크롤 커스텀
+      </div>
       <div class="desc">
         스크롤 커스텀 할 때 해당 요소에 height지정 필수
       </div>
       <div class="scroll-custom">
-        <div>스<br />크<br />롤<br />되<br />어<br />라<br />!</div>
+        <div>
+          스<br />크<br />롤<br />되<br />어<br />라<br />!<br />
+          스<br />크<br />롤<br />되<br />어<br />라<br />!
+        </div>
       </div>
     </div>
-    <div class="l-center btn-guide">
+    <div class="l-center btn-guide guide-wrap">
+      <div class="section-title">
+        버튼
+      </div>
       <div class="desc">
-        버튼은 btn-wrap으로 움직이며, 기본/높이/너비/스타일/색 클래스들을 지닌다.<br />
+        버튼은 btn-wrap으로 움직이며, 기본/높이/스타일/색 클래스들을 지닌다.<br />
         component안에서 custom될 때에는 .component .btn으로 선택하여 바꾼다.<br />
         버튼에 다른 색상을 추가하고 싶을 때에는 variable.scss의 btn-color map을
         이용한다.<br />
-        버튼의 사이즈를 바꾸고 싶을 때에도 variavle.scss의 btn-height,
-        btn-width에 추가하면 된다.
+        버튼의 높이를 바꾸고 싶을 때에는 variavle.scss의 btn-height에 추가하면 된다.
       </div>
-      <ul class="list-wrap--underline">
+      <ul class="list-wrap">
         <li class="list">
           <div class="list-title">
-            width sm, fill btn
+            normal wrap, sm, round
           </div>
           <div class="list-desc">
             <div class="btn-wrap">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-main">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-round btn-main">
                 버튼
               </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-md btn-rounded btn-shadow btn-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-lg btn-round btn-shadow btn-gray">
+              <button type="button" class="btn btn-sm btn-round btn-sub">
                 버튼
               </button>
             </div>
@@ -235,17 +212,15 @@
         </li>
         <li class="list">
           <div class="list-title">
-            width md, fill btn
+            normal wrap, sm, rounded
           </div>
           <div class="list-desc">
             <div class="btn-wrap">
-              <button type="button" class="btn btn-wi-md btn-ht-sm btn-round btn-main">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-rounded btn-main">
                 버튼
               </button>
-              <button type="button" class="btn btn-wi-md btn-ht-md btn-rounded btn-shadow btn-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-md btn-ht-lg btn-shadow btn-gray">
+              <button type="button" class="btn btn-sm btn-rounded btn-sub">
                 버튼
               </button>
             </div>
@@ -253,36 +228,15 @@
         </li>
         <li class="list">
           <div class="list-title">
-            width lg, fill btn
+            normal wrap, sm
           </div>
           <div class="list-desc">
             <div class="btn-wrap">
-              <button type="button" class="btn btn-wi-lg btn-ht-sm btn-main">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-main">
                 버튼
               </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-md btn-round btn-shadow btn-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-lg btn-rounded btn-shadow btn-gray">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width sm, border btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap bd-btn-wrap">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-bd-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-bd-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-md btn-round btn-shadow btn-bd-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-lg btn-rounded btn-shadow btn-bd-gray">
+              <button type="button" class="btn btn-sm btn-sub">
                 버튼
               </button>
             </div>
@@ -290,101 +244,15 @@
         </li>
         <li class="list">
           <div class="list-title">
-            width md, border btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap bd-btn-wrap">
-              <button type="button" class="btn btn-wi-md btn-ht-sm btn-bd-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-md btn-ht-md btn-round btn-shadow btn-bd-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-md btn-ht-lg btn-rounded btn-shadow btn-bd-gray">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width lg, border btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap bd-btn-wrap">
-              <button type="button" class="btn btn-wi-lg btn-ht-sm btn-bd-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-md btn-round btn-shadow btn-bd-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-lg btn-rounded btn-shadow btn-bd-gray">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width sm, ghost btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap gst-btn-wrap">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-gst-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-gst-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-md btn-rounded btn-shadow btn-gst-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-lg btn-round btn-shadow btn-gst-gray">
-                버튼
-              </button>
-            </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width md, ghost btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap gst-btn-wrap">
-              <button type="button" class="btn btn-wi-md btn-ht-sm btn-rounded btn-gst-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-md btn-ht-md btn-shadow btn-gst-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-md btn-ht-lg btn-round btn-shadow btn-gst-gray">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width lg, ghost btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap gst-btn-wrap">
-              <button type="button" class="btn btn-wi-lg btn-ht-sm btn-gst-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-md btn-round btn-shadow btn-gst-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-lg btn-ht-lg btn-rounded btn-shadow btn-gst-gray">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            width 100%
+            normal wrap, sm, border-btn
           </div>
           <div class="list-desc">
             <div class="btn-wrap">
-              <button type="button" class="btn btn-wi-100 btn-ht-md btn-bd-main">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-bd-main">
+                버튼
+              </button>
+              <button type="button" class="btn btn-sm btn-bd-sub">
                 버튼
               </button>
             </div>
@@ -392,48 +260,15 @@
         </li>
         <li class="list">
           <div class="list-title">
-            소셜버튼
+            double btn wrap, sm
           </div>
           <div class="list-desc">
-            <div class="btn-wrap socail-btn-wrap">
-              <button type="button" class="btn btn-wi-100 btn-ht-md btn-kakao">kakao</button>
-              <button type="button" class="btn btn-wi-100 btn-ht-md btn-facebook">facebook</button>
-              <button type="button" class="btn btn-wi-100 btn-ht-md btn-naver">naver</button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            소셜버튼: icon ver.
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap socail-icon-btn-wrap">
-              <button type="button" class="btn btn-circle btn-kakao">
-                <img src="https://www.fillmurray.com/g/20/20" alt="icon btn" />
-              </button>
-              <button type="button" class="btn btn-circle btn-facebook">
-                <img src="https://www.fillmurray.com/g/20/20" alt="icon btn" />
-              </button>
-              <button type="button" class="btn btn-circle btn-naver">
-                <img src="https://www.fillmurray.com/g/20/20" alt="icon btn" />
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            btn-wrap--right
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap--right">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-gst-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-gst-main">
+            <div class="btns-wrap-double">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-main">
                 버튼
               </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-gst-sub">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-gst-gray">
+              <button type="button" class="btn btn-sm btn-sub">
                 버튼
               </button>
             </div>
@@ -441,15 +276,12 @@
         </li>
         <li class="list">
           <div class="list-title">
-            btn-double-wrap
+            fix btn wrap, sm<br />(가이드에선 absolute로 대체)
           </div>
           <div class="list-desc">
-            <div class="btn-double-wrap">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-gst-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-sub">
+            <div class="btns-wrap-fixed">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-main">
                 버튼
               </button>
             </div>
@@ -457,15 +289,15 @@
         </li>
         <li class="list">
           <div class="list-title">
-            btn-double-wrap--side
+            double fix btn wrap, sm<br />(가이드에선 absolute로 대체)
           </div>
           <div class="list-desc">
-            <div class="btn-double-wrap--side">
-              <!-- btn(리셋) btn-wi-(너비) btn-ht-(높이) btn-(스타일) btn-gst-(색상) -->
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-bd-main">
+            <div class="btns-wrap-doublefix">
+              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+              <button type="button" class="btn btn-sm btn-main">
                 버튼
               </button>
-              <button type="button" class="btn btn-wi-sm btn-ht-sm btn-bd-sub">
+              <button type="button" class="btn btn-sm btn-sub">
                 버튼
               </button>
             </div>
@@ -473,7 +305,10 @@
         </li>
       </ul>
     </div>
-    <div class="l-center form-guide">
+    <div class="l-center form-guide guide-wrap">
+      <div class="section-title">
+        form
+      </div>
       <div class="desc">
         input은 input-wrap가 한 세트
       </div>
@@ -482,7 +317,7 @@
           <legend class="is-none">
             폼 제목: 필수요소이므로 display: none를 주어 가린다
           </legend>
-          <ul class="list-wrap--underline">
+          <ul class="list-wrap">
             <li class="list">
               <div class="list-title">
                 input text
@@ -495,7 +330,17 @@
             </li>
             <li class="list">
               <div class="list-title">
-                input text
+                input text underbar
+              </div>
+              <div class="list-desc">
+                <div class="input-wrap">
+                  <input type="text" class="input input-underbar" placeholder="입력" />
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-title">
+                input select
               </div>
               <div class="list-desc">
                 <div class="input-wrap">
@@ -508,7 +353,20 @@
             </li>
             <li class="list">
               <div class="list-title">
-                input text
+                input select underbar
+              </div>
+              <div class="list-desc">
+                <div class="input-wrap">
+                  <select class="input input-underbar">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-title">
+                input textarea
               </div>
               <div class="list-desc">
                 <div class="input-wrap">
@@ -521,9 +379,10 @@
       </form>
     </div>
     <div class="l-center">
+      <div class="section-title">별점영역</div>
       <div class="desc">
       </div>
-      <ul class="list-wrap--underline">
+      <ul class="list-wrap">
         <li class="list">
           <div class="list-title">
             별점
@@ -559,9 +418,11 @@
       </ul>
     </div>
     <div class="l-center">
+      <div class="section-title">
+      </div>
       <div class="desc">
       </div>
-      <ul class="list-wrap--underline">
+      <ul class="list-wrap">
         <li class="list">
           <div class="list-title"></div>
           <div class="list-desc"></div>
