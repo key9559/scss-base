@@ -40,8 +40,8 @@ $base-size: 16;
   @return ($target / $context) * 1em;
 }
 
-@function childEm($target, $parent) {
+@function cem($target, $parent) {
   @return ($target / $parent) * 1em;
 }
 
-// ex: @include childEmSize(16, 30);
+// ex: @include cem(16, 30);
