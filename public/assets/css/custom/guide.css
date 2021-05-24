@@ -39,10 +39,10 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0 20px;
   border-top: 1px solid #cdcdcd;
 }
 
@@ -52,10 +52,13 @@
 
 .list-wrap .list-title {
   width: 250px;
+  padding: 20px 0;
 }
 
 .list-wrap .list-desc {
   width: 100%;
+  padding: 20px 10px;
+  border-left: 1px solid #cdcdcd;
 }
 
 .show-guide .list {
@@ -74,14 +77,12 @@
 
 .btn-guide .btns-wrap-fixed {
   position: absolute;
-  top: -25px;
   bottom: auto;
   left: 0;
 }
 
 .btn-guide .btns-wrap-doublefix {
   position: absolute;
-  top: -25px;
   bottom: auto;
   left: 0;
 }

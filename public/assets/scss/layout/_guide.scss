@@ -34,8 +34,8 @@
   .list {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
+    align-items: stretch;
+    padding: 0 20px;
     border-top: 1px solid color(border);
 
     &:first-child {
@@ -45,10 +45,13 @@
 
   .list-title {
     width: 250px;
+    padding: 20px 0;
   }
 
   .list-desc {
     width: 100%;
+    padding: 20px 10px;
+    border-left: 1px solid color(border);
   }
 }
 
@@ -71,14 +74,12 @@
 
   .btns-wrap-fixed {
     position: absolute;
-    top: -25px;
     bottom: auto;
     left: 0;
   }
 
   .btns-wrap-doublefix {
     position: absolute;
-    top: -25px;
     bottom: auto;
     left: 0;
   }
