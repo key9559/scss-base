@@ -101,6 +101,12 @@
   .btn-#{$name} {
     background-color: $color;
     color: color(text); // 어두운배경 따로 color: white지정하기
+    transition: all 0.3s;
+
+    @include hover {
+      background-color: transparent;
+      border: 1px solid $color;
+    }
   }
 }
 
@@ -114,6 +120,12 @@
     border: 1px solid $color;
     background-color: white;
     color: $color;
+    transition: all 0.3s;
+
+    @include hover {
+      background-color: $color;
+      color: color(text);
+    }
   }
 }
 
@@ -122,6 +134,12 @@
   .btn-gst-#{$name} {
     border: 1px solid $color;
     color: $color;
+    transition: all 0.3s;
+
+    @include hover {
+      background-color: $color;
+      color: color(text);
+    }
   }
 }
 

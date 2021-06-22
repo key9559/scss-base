@@ -144,6 +144,8 @@ wbr {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
   font-family: "helvatica", "noto", "spoqa", sans-serif;
   letter-spacing: -0.04em;
   word-break: break-all;
@@ -207,6 +209,21 @@ ul {
   stroke-width: 0;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
@@ -227,6 +244,18 @@ ol,
 ul,
 dl {
   list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
 }
 
 select {
@@ -743,16 +772,58 @@ html.ie .scroll-custom {
 .btn-main {
   background-color: lightblue;
   color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-main:hover {
+    background-color: transparent;
+    border: 1px solid lightblue;
+  }
+}
+
+.btn-main:focus {
+  background-color: transparent;
+  border: 1px solid lightblue;
 }
 
 .btn-sub {
   background-color: pink;
   color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-sub:hover {
+    background-color: transparent;
+    border: 1px solid pink;
+  }
+}
+
+.btn-sub:focus {
+  background-color: transparent;
+  border: 1px solid pink;
 }
 
 .btn-gray {
   background-color: gray;
   color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-gray:hover {
+    background-color: transparent;
+    border: 1px solid gray;
+  }
+}
+
+.btn-gray:focus {
+  background-color: transparent;
+  border: 1px solid gray;
 }
 
 .btn-gra {
@@ -765,7 +836,13 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-.btn-gra:hover, .btn-gra:focus {
+@media all and (min-width: 600px) {
+  .btn-gra:hover {
+    background-position-x: 100%;
+  }
+}
+
+.btn-gra:focus {
   background-position-x: 100%;
 }
 
@@ -773,33 +850,117 @@ html.ie .scroll-custom {
   border: 1px solid lightblue;
   background-color: white;
   color: lightblue;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-bd-main:hover {
+    background-color: lightblue;
+    color: black;
+  }
+}
+
+.btn-bd-main:focus {
+  background-color: lightblue;
+  color: black;
 }
 
 .btn-bd-sub {
   border: 1px solid pink;
   background-color: white;
   color: pink;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-bd-sub:hover {
+    background-color: pink;
+    color: black;
+  }
+}
+
+.btn-bd-sub:focus {
+  background-color: pink;
+  color: black;
 }
 
 .btn-bd-gray {
   border: 1px solid gray;
   background-color: white;
   color: gray;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-bd-gray:hover {
+    background-color: gray;
+    color: black;
+  }
+}
+
+.btn-bd-gray:focus {
+  background-color: gray;
+  color: black;
 }
 
 .btn-gst-main {
   border: 1px solid lightblue;
   color: lightblue;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-gst-main:hover {
+    background-color: lightblue;
+    color: black;
+  }
+}
+
+.btn-gst-main:focus {
+  background-color: lightblue;
+  color: black;
 }
 
 .btn-gst-sub {
   border: 1px solid pink;
   color: pink;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-gst-sub:hover {
+    background-color: pink;
+    color: black;
+  }
+}
+
+.btn-gst-sub:focus {
+  background-color: pink;
+  color: black;
 }
 
 .btn-gst-gray {
   border: 1px solid gray;
   color: gray;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .btn-gst-gray:hover {
+    background-color: gray;
+    color: black;
+  }
+}
+
+.btn-gst-gray:focus {
+  background-color: gray;
+  color: black;
 }
 
 .socail-btn-wrap {
@@ -1242,7 +1403,7 @@ html.ie .scroll-custom {
   padding-top: 30px;
 }
 
-.ft-list .tit {
+.ft-list .title {
   color: rgba(255, 255, 255, 0.6);
 }
 

@@ -286,8 +286,8 @@
   background-position: left top;
   color: white;
   transition: all 0.3s;
-  &:hover,
-  &:focus {
+
+  @include hover {
     background-position-x: 100%;
   }
 }
