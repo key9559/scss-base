@@ -276,7 +276,7 @@ table {
   border-spacing: 0;
 }
 
-/* =================== typo =================== */
+/* =================== fonts =================== */
 /* ---------- noto sans kr ---------- */
 @font-face {
   font-family: "noto";
@@ -519,11 +519,11 @@ table {
 }
 
 /* =================== helper =================== */
-.is-none {
+.none {
   display: none;
 }
 
-.is-voice-only {
+.voice-only {
   position: absolute;
   top: 0;
   left: -9999rem;
@@ -534,66 +534,66 @@ table {
   letter-spacing: 0;
 }
 
-.is-tab-show {
+.tab-show {
   display: none;
 }
 
 @media all and (max-width: 900px) {
-  .is-tab-show {
+  .tab-show {
     display: block;
   }
 }
 
 @media all and (max-width: 900px) {
-  .is-tab-hide {
+  .tab-hide {
     display: none;
   }
 }
 
-.is-mo-show {
+.mo-show {
   display: none;
 }
 
 @media all and (max-width: 600px) {
-  .is-mo-show {
+  .mo-show {
     display: block;
   }
 }
 
 @media all and (max-width: 600px) {
-  .is-mo-hide {
+  .mo-hide {
     display: none;
   }
 }
 
-.is-mo-sm-show {
+.mo-sm-show {
   display: none;
 }
 
 @media all and (max-width: 360px) {
-  .is-mo-sm-show {
+  .mo-sm-show {
     display: block;
   }
 }
 
 @media all and (max-width: 360px) {
-  .is-mo-sm-hide {
+  .mo-sm-hide {
     display: none;
   }
 }
 
-.is-mo-xsm-show {
+.mo-xsm-show {
   display: none;
 }
 
 @media all and (max-width: 320px) {
-  .is-mo-xsm-show {
+  .mo-xsm-show {
     display: block;
   }
 }
 
 @media all and (max-width: 320px) {
-  .is-mo-xsm-hide {
+  .mo-xsm-hide {
     display: none;
   }
 }

@@ -1,11 +1,11 @@
 /* =================== helper =================== */
 // 노출되지 않을 영역
-.is-none {
+.none {
   display: none;
 }
 
 // 보이진 않지만 리딩되는 영역
-.is-voice-only {
+.voice-only {
   @include absolute($l: -9999rem);
 
   font-size: 0;
@@ -17,53 +17,53 @@
 }
 
 // 브라우저 크기별 레이아웃 보이기
-.is-tab-show {
+.tab-show {
   display: none;
   @include media-dv(tab) {
     display: block;
   }
 }
 
-.is-tab-hide {
+.tab-hide {
   @include media-dv(tab) {
     display: none;
   }
 }
 
-.is-mo-show {
+.mo-show {
   display: none;
   @include media-dv(mb) {
     display: block;
   }
 }
 
-.is-mo-hide {
+.mo-hide {
   @include media-dv(mb) {
     display: none;
   }
 }
 
-.is-mo-sm-show {
+.mo-sm-show {
   display: none;
   @include media(360px) {
     display: block;
   }
 }
 
-.is-mo-sm-hide {
+.mo-sm-hide {
   @include media(360px) {
     display: none;
   }
 }
 
-.is-mo-xsm-show {
+.mo-xsm-show {
   display: none;
   @include media(320px) {
     display: block;
   }
 }
 
-.is-mo-xsm-hide {
+.mo-xsm-hide {
   @include media(320px) {
     display: none;
   }
