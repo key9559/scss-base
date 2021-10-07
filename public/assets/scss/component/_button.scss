@@ -51,9 +51,7 @@
 
 .btn {
   @include input-reset;
-  @include flex(inline-flex) {
-    @include flex-item-center;
-  }
+  @include flex-center(inline-flex);
 
   cursor: pointer;
 
@@ -65,9 +63,7 @@
 
 // button style
 .btn-circle {
-  @include flex(inline-flex) {
-    @include flex-item-center;
-  }
+  @include flex-center(inline-flex);
   @include circle(50px);
 
   border-radius: 50%;

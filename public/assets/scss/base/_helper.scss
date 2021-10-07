@@ -19,53 +19,53 @@
 // 브라우저 크기별 레이아웃 보이기
 .tab-show {
   display: none;
-  @include media-dv(tab) {
+  @include tablet {
     display: block;
   }
 }
 
 .tab-hide {
-  @include media-dv(tab) {
+  @include tablet {
     display: none;
   }
 }
 
-.mo-show {
+.mb-show {
   display: none;
-  @include media-dv(mb) {
+  @include mobile {
     display: block;
   }
 }
 
-.mo-hide {
-  @include media-dv(mb) {
-    display: none;
+.mb-hide {
+  @include mobile {
+    display: none !important;
   }
 }
 
-.mo-sm-show {
+.sm-show {
   display: none;
   @include media(360px) {
     display: block;
   }
 }
 
-.mo-sm-hide {
+.sm-hide {
   @include media(360px) {
-    display: none;
+    display: none !important;
   }
 }
 
-.mo-xsm-show {
+.xsm-show {
   display: none;
   @include media(320px) {
     display: block;
   }
 }
 
-.mo-xsm-hide {
+.xsm-hide {
   @include media(320px) {
-    display: none;
+    display: none !important;
   }
 }
 

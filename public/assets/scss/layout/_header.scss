@@ -1,15 +1,22 @@
 /* =================== header =================== */
 .header-wrap {
-  height: 50px;
+  height: $gnb-height;
+
+  @include mobile {
+    height: $m-gnb-height;
+  }
 }
-// com-hd 와 com-hd-wrap의 높이가 일치해야
-// 따로 fixed에 대한 높이-여백 지정이 없음
+
 .com-hd {
   @include fixed;
-  @include wh(100%, 100px);
+  @include wh(100%, $gnb-height);
 
   background-color: rgba(0, 0, 0, 0.3);
   z-index: zIndex(header);
+
+  @include mobile {
+    height: $m-gnb-height;
+  }
 }
 
 .com-hd-wrap {

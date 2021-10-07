@@ -5,6 +5,18 @@
   }
 }
 
+@mixin tablet {
+  @include media-dv(tab) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media-dv(mb) {
+    @content;
+  }
+}
+
 // responsive custom Setting
 @mixin media($px, $range: max) {
   @media all and (#{$range}-width: $px) {
@@ -38,51 +50,7 @@
   }
 }
 
-// translate
-@mixin translate(
-  $t: 0,
-  $l: 0,
-  $b: null,
-  $x: null,
-  $y: null,
-  $x: null,
-  $y: null
-) {
-  position: absolute;
-
-  @if $t == 50% and $l == 50% {
-    @if $x and $y {
-      top: $t;
-      left: $l;
-      transform: translate($x, $y);
-    } @else if $x {
-      top: $t;
-      left: $l;
-      transform: translate($x, -50%);
-    } @else if $y {
-      top: $t;
-      left: $l;
-      transform: translate(-50%, $y);
-    } @else {
-      top: $t;
-      left: $l;
-      transform: translate(-50%, -50%);
-    }
-  } @else if $t == 50% or $l == 50% {
-    @if $t == 50% {
-      top: $t;
-      left: $l;
-      transform: if($y, translateY($y), translateY(-50%));
-    }
-
-    @if $l == 50% {
-      top: $t;
-      left: $l;
-      transform: if($x, translateX($x), translateX(-50%));
-    }
-  }
-}
-
+// size
 @mixin wh($w: null, $h: null) {
   width: $w;
   height: $h;
@@ -100,6 +68,7 @@
   height: 100%;
 }
 
+// flex items
 @mixin flex($d: flex) {
   display: $d;
   @content;
@@ -116,15 +85,18 @@
   justify-content: $jc;
 }
 
-@mixin flex-center {
-  @include flex {
-    @include flex-item-center;
+@mixin flex-center($d: flex) {
+  @include flex($d) {
+    @include flex-op(center, center);
   }
+  @content;
 }
 
-@mixin flex-item-center {
-  align-items: center;
-  justify-content: center;
+@mixin flex-side {
+  @include flex {
+    @include flex-op(center, space-between);
+  }
+  @content;
 }
 
 @mixin bg-url($path, $img, $op-default: false, $op-p: null, $op-s: null) {
@@ -149,12 +121,11 @@
   background-repeat: $r;
 }
 
-@mixin font-op($c: null, $w: null, $ls: null) {
-  @content;
-
+@mixin font-op($s: 16, $w: null, $c: null) {
+  font-size: rem($s);
   font-weight: $w;
   color: $c;
-  letter-spacing: $ls;
+  @content;
 }
 
 @mixin make-before($c: "", $d: block) {
