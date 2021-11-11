@@ -19,60 +19,129 @@
   letter-spacing: 0;
 }
 
-// 브라우저 크기별 레이아웃 보이기
-.tab-show {
-  display: none;
+// 브라우저 크기별 레이아웃 보이기(노출 여부)
 
-  @include tablet {
-    display: block;
-  }
-}
-
-.tab-hide {
-  @include tablet {
-    display: none;
-  }
-}
-
-.mb-show {
-  display: none;
-
-  @include mobile {
-    display: block;
-  }
-}
-
+// 모바일
 .mb-hide {
   @include mobile {
     display: none !important;
   }
 }
 
-.sm-show {
-  display: none;
+.mb-show {
+  display: none !important;
 
-  @include media(360px) {
-    display: block;
+  @include mobile {
+    display: block !important;
   }
 }
 
+.mb-show-flex {
+  display: none !important;
+
+  @include mobile {
+    display: flex !important;
+  }
+}
+
+.mb-show-ib {
+  display: none !important;
+
+  @include mobile {
+    display: inline-block !important;
+  }
+}
+
+// 태블릿
+.tab-hide {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.tab-show {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+}
+
+.tab-show-flex {
+  display: none !important;
+
+  @include tablet {
+    display: flex !important;
+  }
+}
+
+.tab-show-ib {
+  display: none !important;
+
+  @include tablet {
+    display: inline-block !important;
+  }
+}
+
+// 360px
 .sm-hide {
   @include media(360px) {
     display: none !important;
   }
 }
 
-.xsm-show {
-  display: none;
+.sm-show {
+  display: none !important;
 
-  @include media(320px) {
-    display: block;
+  @include media(360px) {
+    display: block !important;
   }
 }
 
+.sm-show-flex {
+  display: none !important;
+
+  @include media(360px) {
+    display: flex !important;
+  }
+}
+
+.sm-show-ib {
+  display: none !important;
+
+  @include media(360px) {
+    display: inline-block !important;
+  }
+}
+
+// 320px
 .xsm-hide {
   @include media(320px) {
     display: none !important;
+  }
+}
+
+.xsm-show {
+  display: none !important;
+
+  @include media(320px) {
+    display: block !important;
+  }
+}
+
+.xsm-show-flex {
+  display: none !important;
+
+  @include media(320px) {
+    display: flex !important;
+  }
+}
+
+.xsm-show-ib {
+  display: none !important;
+
+  @include media(320px) {
+    display: inline-block !important;
   }
 }
 
