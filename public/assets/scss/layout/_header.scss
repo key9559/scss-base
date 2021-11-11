@@ -9,10 +9,11 @@
 
 .com-hd {
   @include fixed;
-  @include wh(100%, $gnb-height);
 
+  width: 100%;
+  height: $gnb-height;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: zIndex(header);
+  z-index: z(header);
 
   @include mobile {
     height: $m-gnb-height;
@@ -34,19 +35,20 @@
 
 // gnb style
 .hd-gnb-wrap {
-  @include wh(50px, 50px);
+  width: 50px;
+  height: 50px;
 }
 
 .gnb-btn {
   @include flex-col {
     @include flex-op(center, center);
   }
-  @include wh(100%, 100%);
+  @include full;
   @include input-reset;
 
   position: relative;
   cursor: pointer;
-  z-index: zIndex(fixed);
+  z-index: z(fixed);
 
   &.active {
     .gnb-line {
@@ -71,9 +73,9 @@
 }
 
 .gnb-line {
-  @include wh(70%, 5px);
-
   display: block;
+  width: 70%;
+  height: 5px;
   margin-top: 6px;
   border-radius: 5px;
   background-color: white;
@@ -88,20 +90,21 @@
 // gnb menu style
 .gnb-menu-wrap {
   @include fixed($r: -100%);
-  @include wh(500px, 100%);
 
+  z-index: z(header);
+  width: 500px;
+  height: 100%;
   padding: 80px 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: zIndex(header);
   transition: all 0.3s ease-in-out;
 
-  @include media(mb) {
+  @include mobile {
     width: 100%;
   }
 
   .gnb-inner {
-    @include wh(90%, 90%);
-
+    width: 90%;
+    height: 90%;
     margin: 0 auto;
     background-color: white;
   }

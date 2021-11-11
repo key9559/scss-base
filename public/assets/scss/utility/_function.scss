@@ -13,7 +13,7 @@
 }
 
 // z Index setting
-@function zIndex($layer) {
+@function z($layer) {
   @return map-get($zIndex-set, $layer);
 }
 

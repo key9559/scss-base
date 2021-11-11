@@ -527,10 +527,13 @@ table {
   position: absolute;
   top: 0;
   left: -9999rem;
-  font-size: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  color: transparent;
 }
 
-.is-en {
+.ls-0 {
   letter-spacing: 0;
 }
 
@@ -661,9 +664,9 @@ html.ie .scroll-custom {
   top: auto;
   bottom: 0;
   left: 0;
+  z-index: 20;
   width: 100%;
   height: 50px;
-  z-index: 20;
 }
 
 .btns-wrap-fixed .btn {
@@ -685,9 +688,9 @@ html.ie .scroll-custom {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 20;
   width: 100%;
   height: 50px;
-  z-index: 20;
 }
 
 .btns-wrap-doublefix .btn {
@@ -1008,11 +1011,11 @@ html.ie .scroll-custom {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* =================== form =================== */
@@ -1039,6 +1042,14 @@ html.ie .scroll-custom {
   padding: 0 17px;
   background-color: white;
   font-size: emSize(18);
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+@media all and (min-width: 600px) {
+  .input:hover {
+    border-color: lightblue;
+  }
 }
 
 .input:focus {
@@ -1083,7 +1094,15 @@ html.ie .scroll-custom {
   width: 100%;
   height: 500px;
   padding: 20px;
+  border: 1px solid;
+  border-radius: 6px;
   resize: none;
+}
+
+@media all and (min-width: 600px) {
+  .input-tarea:hover {
+    border-color: lightblue;
+  }
 }
 
 .input-tarea:focus {
@@ -1111,10 +1130,18 @@ html.ie .scroll-custom {
   width: 100%;
   height: 54px;
   border: 1px solid;
-  border-radius: 25px;
+  border-radius: 6px;
   padding: 0 17px;
   background-color: white;
   font-size: emSize(18);
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+@media all and (min-width: 600px) {
+  .input-round:hover {
+    border-color: lightblue;
+  }
 }
 
 .input-round:focus {
@@ -1141,12 +1168,18 @@ html.ie .scroll-custom {
   display: block;
   width: 100%;
   height: 54px;
-  border: 1px none;
-  border-radius: 0;
+  border: 1px solid;
+  border-radius: 6px;
   padding: 0 17px;
   background-color: white;
   font-size: emSize(18);
   border-bottom: 1px solid;
+}
+
+@media all and (min-width: 600px) {
+  .input-underbar:hover {
+    border-color: lightblue;
+  }
 }
 
 .input-underbar:focus {
@@ -1349,9 +1382,9 @@ html.ie .scroll-custom {
 }
 
 .gnb-line {
+  display: block;
   width: 70%;
   height: 5px;
-  display: block;
   margin-top: 6px;
   border-radius: 5px;
   background-color: white;
@@ -1369,16 +1402,16 @@ html.ie .scroll-custom {
   top: 0;
   left: auto;
   right: -100%;
+  z-index: 10;
   width: 500px;
   height: 100%;
   padding: 80px 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-@media all and (max-width: mb) {
+@media all and (max-width: 600px) {
   .gnb-menu-wrap {
     width: 100%;
   }

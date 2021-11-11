@@ -8,17 +8,21 @@
 .voice-only {
   @include absolute($l: -9999rem);
 
-  font-size: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  color: transparent;
 }
 
 // 영어, 숫자만 있는 콘텐츠
-.is-en {
+.ls-0 {
   letter-spacing: 0;
 }
 
 // 브라우저 크기별 레이아웃 보이기
 .tab-show {
   display: none;
+
   @include tablet {
     display: block;
   }
@@ -32,6 +36,7 @@
 
 .mb-show {
   display: none;
+
   @include mobile {
     display: block;
   }
@@ -45,6 +50,7 @@
 
 .sm-show {
   display: none;
+
   @include media(360px) {
     display: block;
   }
@@ -58,6 +64,7 @@
 
 .xsm-show {
   display: none;
+
   @include media(320px) {
     display: block;
   }
