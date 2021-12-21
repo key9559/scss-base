@@ -37,19 +37,6 @@
   }
 }
 
-// position: fixed
-@mixin fixed($t: 0, $l: 0, $b: null, $r: null) {
-  position: fixed;
-
-  @if $t {
-    top: if($b, auto, $t);
-    bottom: $b;
-
-    left: if($r, auto, $l);
-    right: $r;
-  }
-}
-
 // size
 @mixin circle($s) {
   width: $s;
@@ -148,12 +135,7 @@
 }
 
 @mixin hover {
-  @include media(600px, min) {
-    &:hover {
-      @content;
-    }
-  }
-
+  &:hover,
   &:focus {
     @content;
   }

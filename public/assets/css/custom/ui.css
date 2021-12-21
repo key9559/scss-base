@@ -748,25 +748,6 @@ html.ie .scroll-custom {
 }
 
 .btns-wrap-fixed {
-  position: fixed;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  z-index: 20;
-  width: 100%;
-  height: 50px;
-}
-
-.btns-wrap-fixed .btn {
-  width: 100%;
-  height: 100%;
-}
-
-.btns-wrap-doublefix {
-  position: fixed;
-  top: auto;
-  bottom: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,13 +757,17 @@ html.ie .scroll-custom {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10px;
   z-index: 20;
+  position: fixed;
+  top: auto;
+  bottom: 0;
   width: 100%;
   height: 50px;
 }
 
-.btns-wrap-doublefix .btn {
-  width: 50%;
+.btns-wrap-fixed .btn {
+  width: 100%;
   height: 100%;
 }
 
@@ -867,14 +852,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-main:hover {
-    background-color: transparent;
-    border: 1px solid lightblue;
-  }
-}
-
-.btn-main:focus {
+.btn-main:hover, .btn-main:focus {
   background-color: transparent;
   border: 1px solid lightblue;
 }
@@ -886,14 +864,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-sub:hover {
-    background-color: transparent;
-    border: 1px solid pink;
-  }
-}
-
-.btn-sub:focus {
+.btn-sub:hover, .btn-sub:focus {
   background-color: transparent;
   border: 1px solid pink;
 }
@@ -905,14 +876,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-gray:hover {
-    background-color: transparent;
-    border: 1px solid gray;
-  }
-}
-
-.btn-gray:focus {
+.btn-gray:hover, .btn-gray:focus {
   background-color: transparent;
   border: 1px solid gray;
 }
@@ -927,13 +891,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-gra:hover {
-    background-position-x: 100%;
-  }
-}
-
-.btn-gra:focus {
+.btn-gra:hover, .btn-gra:focus {
   background-position-x: 100%;
 }
 
@@ -945,14 +903,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-bd-main:hover {
-    background-color: lightblue;
-    color: black;
-  }
-}
-
-.btn-bd-main:focus {
+.btn-bd-main:hover, .btn-bd-main:focus {
   background-color: lightblue;
   color: black;
 }
@@ -965,14 +916,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-bd-sub:hover {
-    background-color: pink;
-    color: black;
-  }
-}
-
-.btn-bd-sub:focus {
+.btn-bd-sub:hover, .btn-bd-sub:focus {
   background-color: pink;
   color: black;
 }
@@ -985,14 +929,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-bd-gray:hover {
-    background-color: gray;
-    color: black;
-  }
-}
-
-.btn-bd-gray:focus {
+.btn-bd-gray:hover, .btn-bd-gray:focus {
   background-color: gray;
   color: black;
 }
@@ -1004,14 +941,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-gst-main:hover {
-    background-color: lightblue;
-    color: black;
-  }
-}
-
-.btn-gst-main:focus {
+.btn-gst-main:hover, .btn-gst-main:focus {
   background-color: lightblue;
   color: black;
 }
@@ -1023,14 +953,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-gst-sub:hover {
-    background-color: pink;
-    color: black;
-  }
-}
-
-.btn-gst-sub:focus {
+.btn-gst-sub:hover, .btn-gst-sub:focus {
   background-color: pink;
   color: black;
 }
@@ -1042,14 +965,7 @@ html.ie .scroll-custom {
   transition: all 0.3s;
 }
 
-@media all and (min-width: 600px) {
-  .btn-gst-gray:hover {
-    background-color: gray;
-    color: black;
-  }
-}
-
-.btn-gst-gray:focus {
+.btn-gst-gray:hover, .btn-gst-gray:focus {
   background-color: gray;
   color: black;
 }
@@ -1132,13 +1048,7 @@ html.ie .scroll-custom {
   border: 1px solid;
 }
 
-@media all and (min-width: 600px) {
-  .input:hover {
-    border-color: lightblue;
-  }
-}
-
-.input:focus {
+.input:hover, .input:focus {
   border-color: lightblue;
 }
 
@@ -1372,11 +1282,11 @@ html.ie .scroll-custom {
 }
 
 .gnb-menu-wrap {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: auto;
   right: -100%;
-  z-index: 10;
   width: 500px;
   height: 100%;
   padding: 80px 0;

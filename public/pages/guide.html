@@ -1,474 +1,397 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="keyword" content="scss base" />
+    <meta name="title" content="scss guide line" />
+    <meta name="description" content="scss base의 가이드라인 문서입니다." />
+    <meta name="author" content="key" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <meta name="keyword" content="scss base" />
-  <meta name="title" content="scss guide line" />
-  <meta name="description" content="scss base의 가이드라인 문서입니다." />
-  <meta name="author" content="key" />
+    <!-- 타이틀 -->
+    <title>scss 가이드라인</title>
 
-  <!-- 타이틀 -->
-  <title>scss 가이드라인</title>
+    <link rel="stylesheet" href="../assets/css/custom/ui.css" />
+    <!-- 가이드 페이지에만 사용 -->
+    <link rel="stylesheet" href="../assets/css/custom/guide.css" />
+  </head>
 
-  <link rel="stylesheet" href="../assets/css/custom/ui.css" />
-  <!-- 가이드 페이지에만 사용 -->
-  <link rel="stylesheet" href="../assets/css/custom/guide.css" />
-</head>
-
-<body>
-  <div class="header-wrap">
-    <header class="com-hd">
-      <div class="com-hd-wrap l-center">
-        <h1 class="com-logo">
-          <a href="#" class="link">
-            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="logo-img" />
-          </a>
-        </h1>
-        <div class="hd-gnb-wrap">
-          <button type="button" class="gnb-btn">
-            <span class="gnb-line gnb-line1">-</span>
-            <span class="gnb-line gnb-line2">-</span>
-            <span class="gnb-line gnb-line3">-</span>
-          </button>
-          <div class="gnb-menu-wrap">
-            <div class="gnb-inner">
-              <ul class="gnb-list-wrap">
-                <li class="gnb-list">
-                  <a href="#" class="link">
-                    link
-                  </a>
-                </li>
-              </ul>
+  <body>
+    <div class="header-wrap">
+      <header class="com-hd">
+        <div class="com-hd-wrap l-center">
+          <h1 class="com-logo">
+            <a href="#" class="link">
+              <img
+                src="https://loremflickr.com/100/50/dog"
+                alt="logo"
+                class="logo-img"
+              />
+            </a>
+          </h1>
+          <div class="hd-gnb-wrap">
+            <button type="button" class="gnb-btn">
+              <span class="gnb-line gnb-line1">-</span>
+              <span class="gnb-line gnb-line2">-</span>
+              <span class="gnb-line gnb-line3">-</span>
+            </button>
+            <div class="gnb-menu-wrap">
+              <div class="gnb-inner">
+                <ul class="gnb-list-wrap">
+                  <li class="gnb-list">
+                    <a href="#" class="link"> link </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-  </div>
-  <div class="guide">
-    <div class="l-center empty-guide">
-      <div class="section-title">
-        비어있는 컨텐츠
-      </div>
-      <ul class="list-wrap">
-        <li class="list">
-          <div class="list-title">
-            글자만 있는 버전
-          </div>
-          <div class="list-desc">
-            <div class="empty-content">
-              <div class="empty-content__txt">검색 결과가 없습니다.</div>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            아이콘이 있는 버전
-          </div>
-          <div class="list-desc">
-            <div class="empty-content">
-              <div class="empty-content__img-box">
-                <img src="https://loremflickr.com/200/100/dog" alt="empty content icon" />
+      </header>
+    </div>
+    <div class="guide">
+      <div class="l-center empty-guide">
+        <div class="section-title">비어있는 컨텐츠</div>
+        <ul class="list-wrap">
+          <li class="list">
+            <div class="list-title">글자만 있는 버전</div>
+            <div class="list-desc">
+              <div class="empty-content">
+                <div class="empty-content__txt">검색 결과가 없습니다.</div>
               </div>
-              <div class="empty-content__txt">등록된 정보가 없습니다.</div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="l-center show-guide guide-wrap">
-      <div class="section-title">
-        윈도우 해상도별 숨겨지거나 보이는 레이아웃
+          </li>
+          <li class="list">
+            <div class="list-title">아이콘이 있는 버전</div>
+            <div class="list-desc">
+              <div class="empty-content">
+                <div class="empty-content__img-box">
+                  <img
+                    src="https://loremflickr.com/200/100/dog"
+                    alt="empty content icon"
+                  />
+                </div>
+                <div class="empty-content__txt">등록된 정보가 없습니다.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="list-wrap">
-        <li class="list">
-          <div class="list-title">
-            태블릿(900px) 보이기
-          </div>
-          <div class="list-desc">
-            <span class="tab-show">
-              태블릿(900px) 보이기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            태블릿(900px) 가리기
-          </div>
-          <div class="list-desc">
-            <span class="tab-hide">
-              태블릿(900px) 가리기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            모바일(600px) 보이기
-          </div>
-          <div class="list-desc">
-            <span class="mb-show">
-              모바일(600px) 보이기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            모바일(600px) 가리기
-          </div>
-          <div class="list-desc">
-            <span class="mb-hide">
-              모바일(600px) 가리기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            360px에서부터 보이기
-          </div>
-          <div class="list-desc">
-            <span class="sm-show">
-              360px에서부터 보이기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            360px에서부터 가리기
-          </div>
-          <div class="list-desc">
-            <span class="sm-hide">
-              360px에서부터 가리기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            320px에서부터 보이기
-          </div>
-          <div class="list-desc">
-            <span class="xsm-show">
-              320px에서부터 보이기
-            </span>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            320px에서부터 가리기
-          </div>
-          <div class="list-desc">
-            <span class="xsm-hide">
-              320px에서부터 가리기
-            </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="l-center scroll-guide guide-wrap">
-      <div class="section-title">
-        스크롤 커스텀
+      <div class="l-center show-guide guide-wrap">
+        <div class="section-title">
+          윈도우 해상도별 숨겨지거나 보이는 레이아웃
+        </div>
+        <ul class="list-wrap">
+          <li class="list">
+            <div class="list-title">태블릿(900px) 보이기</div>
+            <div class="list-desc">
+              <span class="tab-show"> 태블릿(900px) 보이기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">태블릿(900px) 가리기</div>
+            <div class="list-desc">
+              <span class="tab-hide"> 태블릿(900px) 가리기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">모바일(600px) 보이기</div>
+            <div class="list-desc">
+              <span class="mb-show"> 모바일(600px) 보이기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">모바일(600px) 가리기</div>
+            <div class="list-desc">
+              <span class="mb-hide"> 모바일(600px) 가리기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">360px에서부터 보이기</div>
+            <div class="list-desc">
+              <span class="sm-show"> 360px에서부터 보이기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">360px에서부터 가리기</div>
+            <div class="list-desc">
+              <span class="sm-hide"> 360px에서부터 가리기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">320px에서부터 보이기</div>
+            <div class="list-desc">
+              <span class="xsm-show"> 320px에서부터 보이기 </span>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">320px에서부터 가리기</div>
+            <div class="list-desc">
+              <span class="xsm-hide"> 320px에서부터 가리기 </span>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="desc">
-        스크롤 커스텀 할 때 해당 요소에 height지정 필수
-      </div>
-      <div class="scroll-custom">
-        <div>
-          스<br />크<br />롤<br />되<br />어<br />라<br />!<br />
-          스<br />크<br />롤<br />되<br />어<br />라<br />!
+      <div class="l-center scroll-guide guide-wrap">
+        <div class="section-title">스크롤 커스텀</div>
+        <div class="desc">스크롤 커스텀 할 때 해당 요소에 height지정 필수</div>
+        <div class="scroll-custom">
+          <div>
+            스<br />크<br />롤<br />되<br />어<br />라<br />!<br />
+            스<br />크<br />롤<br />되<br />어<br />라<br />!
+          </div>
         </div>
       </div>
-    </div>
-    <div class="l-center btn-guide guide-wrap">
-      <div class="section-title">
-        버튼
-      </div>
-      <div class="desc">
-        버튼은 btn-wrap으로 움직이며, 기본/높이/스타일/색 클래스들을 지닌다.<br />
-        component안에서 custom될 때에는 .component .btn으로 선택하여 바꾼다.<br />
-        버튼에 다른 색상을 추가하고 싶을 때에는 variable.scss의 btn-color map을
-        이용한다.<br />
-        버튼의 높이를 바꾸고 싶을 때에는 variavle.scss의 btn-height에 추가하면 된다.
-      </div>
-      <ul class="list-wrap">
-        <li class="list">
-          <div class="list-title">
-            normal wrap, sm, round
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-round btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-round btn-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            normal wrap, sm, rounded
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-rounded btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded btn-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            normal wrap, sm
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            normal wrap, sm, border-btn
-          </div>
-          <div class="list-desc">
-            <div class="btn-wrap">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-bd-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-bd-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            double btn wrap, sm
-          </div>
-          <div class="list-desc">
-            <div class="btns-wrap-double">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            fix btn wrap, sm<br />(가이드에선 absolute로 대체)
-          </div>
-          <div class="list-desc">
-            <div class="btns-wrap-fixed">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-main">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="list">
-          <div class="list-title">
-            double fix btn wrap, sm<br />(가이드에선 absolute로 대체)
-          </div>
-          <div class="list-desc">
-            <div class="btns-wrap-doublefix">
-              <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
-              <button type="button" class="btn btn-sm btn-main">
-                버튼
-              </button>
-              <button type="button" class="btn btn-sm btn-sub">
-                버튼
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="l-center form-guide guide-wrap">
-      <div class="section-title">
-        form
-      </div>
-      <div class="desc">
-        input은 input-wrap가 한 세트
-      </div>
-      <form method="POST">
-        <fieldset>
-          <legend class="is-none">
-            폼 제목: 필수요소이므로 display: none를 주어 가린다
-          </legend>
-          <ul class="list-wrap">
-            <li class="list">
-              <div class="list-title">
-                input text
-              </div>
-              <div class="list-desc">
-                <div class="input-wrap">
-                  <input type="text" class="input" placeholder="입력" />
-                </div>
-              </div>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                input text underbar
-              </div>
-              <div class="list-desc">
-                <div class="input-wrap">
-                  <input type="text" class="input input-underbar" placeholder="입력" />
-                </div>
-              </div>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                input select
-              </div>
-              <div class="list-desc">
-                <div class="input-wrap">
-                  <select class="input">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </div>
-              </div>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                input select underbar
-              </div>
-              <div class="list-desc">
-                <div class="input-wrap">
-                  <select class="input input-underbar">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </div>
-              </div>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                input textarea
-              </div>
-              <div class="list-desc">
-                <div class="input-wrap">
-                  <textarea class="input-tarea scroll-custom" placeholder="입력"></textarea>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-    </div>
-    <div class="l-center">
-      <div class="section-title">별점영역</div>
-      <div class="desc">
-      </div>
-      <ul class="list-wrap">
-        <li class="list">
-          <div class="list-title">
-            별점
-          </div>
-          <div class="list-desc">
-            <div class="review__scope-wrap">
-              <div class="card__rating rate1">
-                &nbsp;
+      <div class="l-center btn-guide guide-wrap">
+        <div class="section-title">버튼</div>
+        <div class="desc">
+          버튼은 btn-wrap으로 움직이며, 기본/높이/스타일/색 클래스들을
+          지닌다.<br />
+          component안에서 custom될 때에는 .component .btn으로 선택하여
+          바꾼다.<br />
+          버튼에 다른 색상을 추가하고 싶을 때에는 variable.scss의 btn-color
+          map을 이용한다.<br />
+          버튼의 높이를 바꾸고 싶을 때에는 variavle.scss의 btn-height에 추가하면
+          된다.
+        </div>
+        <ul class="list-wrap">
+          <li class="list">
+            <div class="list-title">normal wrap, sm, round</div>
+            <div class="list-desc">
+              <div class="btn-wrap">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-round btn-main">
+                  버튼
+                </button>
+                <button type="button" class="btn btn-sm btn-round btn-sub">
+                  버튼
+                </button>
               </div>
             </div>
-            <div class="review__scope-wrap">
-              <div class="card__rating rate2">
-                &nbsp;
-              </div>
-            </div>
-            <div class="review__scope-wrap">
-              <div class="card__rating rate3">
-                &nbsp;
-              </div>
-            </div>
-            <div class="review__scope-wrap">
-              <div class="card__rating rate4">
-                &nbsp;
-              </div>
-            </div>
-            <div class="review__scope-wrap">
-              <div class="card__rating rate5">
-                &nbsp;
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="l-center">
-      <div class="section-title">
-      </div>
-      <div class="desc">
-      </div>
-      <ul class="list-wrap">
-        <li class="list">
-          <div class="list-title"></div>
-          <div class="list-desc"></div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <footer class="com-ft">
-    <div class="l-center">
-      <div class="ft-link-wrap">
-        <a href="#" class="link">개인정보 처리방침</a>
-        <a href="#" class="link">이용약관</a>
-        <a href="#" class="link">뭐다른링크</a>
-      </div>
-      <div class="ft-logo-wrap">
-        <h2 class="com-logo">
-          <a href="#" class="link">
-            <img src="https://loremflickr.com/100/50/dog" alt="logo" class="logo-img" />
-          </a>
-        </h2>
-      </div>
-      <div class="ft-info-wrap">
-        <ul class="ft-list-wrap">
-          <li class="ft-list">
-            <span class="title">대표</span>
-            <span class="dec">대표명</span>
           </li>
-          <li class="ft-list dot">
-            <span class="title">주소</span>
-            <span class="dec">대한민국 무슨시 어쩌구 저쩌동</span>
+          <li class="list">
+            <div class="list-title">normal wrap, sm, rounded</div>
+            <div class="list-desc">
+              <div class="btn-wrap">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-rounded btn-main">
+                  버튼
+                </button>
+                <button type="button" class="btn btn-sm btn-rounded btn-sub">
+                  버튼
+                </button>
+              </div>
+            </div>
           </li>
-          <li class="ft-list bar">
-            <span class="title">연락처</span>
-            <span class="dec">010-2345-6789</span>
+          <li class="list">
+            <div class="list-title">normal wrap, sm</div>
+            <div class="list-desc">
+              <div class="btn-wrap">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-main">버튼</button>
+                <button type="button" class="btn btn-sm btn-sub">버튼</button>
+              </div>
+            </div>
           </li>
-          <li class="ft-list inline">
-            <span class="title">궁시렁 번호</span>
-            <span class="dec">123-45-67890</span>
+          <li class="list">
+            <div class="list-title">normal wrap, sm, border-btn</div>
+            <div class="list-desc">
+              <div class="btn-wrap">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-bd-main">
+                  버튼
+                </button>
+                <button type="button" class="btn btn-sm btn-bd-sub">
+                  버튼
+                </button>
+              </div>
+            </div>
           </li>
-          <li class="ft-list inline">
-            <span class="title">궁시렁 번호2</span>
-            <span class="dec">123-45-67890</span>
+          <li class="list">
+            <div class="list-title">double btn wrap, sm</div>
+            <div class="list-desc">
+              <div class="btns-wrap-double">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-main">버튼</button>
+                <button type="button" class="btn btn-sm btn-sub">버튼</button>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">
+              fix btn wrap, sm<br />(가이드에선 absolute로 대체)
+            </div>
+            <div class="list-desc">
+              <div class="btns-wrap-fixed">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-main">버튼</button>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="list-title">
+              double fix btn wrap, sm<br />(가이드에선 absolute로 대체)
+            </div>
+            <div class="list-desc">
+              <div class="btns-wrap-fixed">
+                <!-- btn(리셋) btn-(높이) btn-(스타일) btn-(색상) -->
+                <button type="button" class="btn btn-sm btn-main">버튼</button>
+                <button type="button" class="btn btn-sm btn-sub">버튼</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="l-center form-guide guide-wrap">
+        <div class="section-title">form</div>
+        <div class="desc">input은 input-wrap가 한 세트</div>
+        <form method="POST">
+          <fieldset>
+            <legend class="is-none">
+              폼 제목: 필수요소이므로 display: none를 주어 가린다
+            </legend>
+            <ul class="list-wrap">
+              <li class="list">
+                <div class="list-title">input text</div>
+                <div class="list-desc">
+                  <div class="input-wrap">
+                    <input type="text" class="input" placeholder="입력" />
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="list-title">input text underbar</div>
+                <div class="list-desc">
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      class="input input-underbar"
+                      placeholder="입력"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="list-title">input select</div>
+                <div class="list-desc">
+                  <div class="input-wrap">
+                    <select class="input">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="list-title">input select underbar</div>
+                <div class="list-desc">
+                  <div class="input-wrap">
+                    <select class="input input-underbar">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <div class="list-title">input textarea</div>
+                <div class="list-desc">
+                  <div class="input-wrap">
+                    <textarea
+                      class="input-tarea scroll-custom"
+                      placeholder="입력"
+                    ></textarea>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="l-center">
+        <div class="section-title">별점영역</div>
+        <div class="desc"></div>
+        <ul class="list-wrap">
+          <li class="list">
+            <div class="list-title">별점</div>
+            <div class="list-desc">
+              <div class="review__scope-wrap">
+                <div class="card__rating rate1">&nbsp;</div>
+              </div>
+              <div class="review__scope-wrap">
+                <div class="card__rating rate2">&nbsp;</div>
+              </div>
+              <div class="review__scope-wrap">
+                <div class="card__rating rate3">&nbsp;</div>
+              </div>
+              <div class="review__scope-wrap">
+                <div class="card__rating rate4">&nbsp;</div>
+              </div>
+              <div class="review__scope-wrap">
+                <div class="card__rating rate5">&nbsp;</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="l-center">
+        <div class="section-title"></div>
+        <div class="desc"></div>
+        <ul class="list-wrap">
+          <li class="list">
+            <div class="list-title"></div>
+            <div class="list-desc"></div>
           </li>
         </ul>
       </div>
     </div>
-  </footer>
+    <footer class="com-ft">
+      <div class="l-center">
+        <div class="ft-link-wrap">
+          <a href="#" class="link">개인정보 처리방침</a>
+          <a href="#" class="link">이용약관</a>
+          <a href="#" class="link">뭐다른링크</a>
+        </div>
+        <div class="ft-logo-wrap">
+          <h2 class="com-logo">
+            <a href="#" class="link">
+              <img
+                src="https://loremflickr.com/100/50/dog"
+                alt="logo"
+                class="logo-img"
+              />
+            </a>
+          </h2>
+        </div>
+        <div class="ft-info-wrap">
+          <ul class="ft-list-wrap">
+            <li class="ft-list">
+              <span class="title">대표</span>
+              <span class="dec">대표명</span>
+            </li>
+            <li class="ft-list dot">
+              <span class="title">주소</span>
+              <span class="dec">대한민국 무슨시 어쩌구 저쩌동</span>
+            </li>
+            <li class="ft-list bar">
+              <span class="title">연락처</span>
+              <span class="dec">010-2345-6789</span>
+            </li>
+            <li class="ft-list inline">
+              <span class="title">궁시렁 번호</span>
+              <span class="dec">123-45-67890</span>
+            </li>
+            <li class="ft-list inline">
+              <span class="title">궁시렁 번호2</span>
+              <span class="dec">123-45-67890</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-  <script src="../assets/js/custom/ui.js"></script>
-</body>
-
+    <script src="../assets/js/custom/ui.js"></script>
+  </body>
 </html>

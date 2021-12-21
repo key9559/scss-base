@@ -8,8 +8,9 @@
 }
 
 .com-hd {
-  @include fixed;
-
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: $gnb-height;
   background-color: rgba(0, 0, 0, 0.3);
@@ -89,9 +90,11 @@
 
 // gnb menu style
 .gnb-menu-wrap {
-  @include fixed($r: -100%);
-
   z-index: z(header);
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: -100%;
   width: 500px;
   height: 100%;
   padding: 80px 0;
