@@ -33,15 +33,11 @@
 $base-size: 16;
 
 @function rem($target, $context: $base-size) {
-  @return ($target / $context) * 1rem;
+  @return $target / $context * 1rem;
 }
 
 @function em($target, $context: $base-size) {
-  @return ($target / $context) * 1em;
-}
-
-@function cem($target, $parent) {
-  @return ($target / $parent) * 1em;
+  @return $target / $context * 1em;
 }
 
 // ex: @include cem(16, 30);
