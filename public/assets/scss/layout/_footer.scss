@@ -48,8 +48,9 @@
     .dec {
       @include make-before {
         @include absolute($t: 50%);
-        @include wh(1px, 12px);
 
+        width: 1px;
+        height: 12px;
         background-color: white;
         transform: translateY(-50%);
       }

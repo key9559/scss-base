@@ -76,7 +76,7 @@ _typo.scss에서 사용하지 않는 폰트의 font-face 삭제
 ### vendor
 
 ```
-  -output styles
+  -styles
     =reset, normalise, slick, swiper...
     vendor는 보통 css로 되기때문에 사용하지 않으면 삭제
 ```

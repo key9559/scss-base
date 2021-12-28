@@ -1,71 +1,147 @@
 /* =================== helper =================== */
 // 노출되지 않을 영역
-.is-none {
+.none {
   display: none;
 }
 
 // 보이진 않지만 리딩되는 영역
-.is-voice-only {
+.voice-only {
   @include absolute($l: -9999rem);
 
-  font-size: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  color: transparent;
 }
 
 // 영어, 숫자만 있는 콘텐츠
-.is-en {
+.ls-0 {
   letter-spacing: 0;
 }
 
-// 브라우저 크기별 레이아웃 보이기
-.is-tab-show {
-  display: none;
-  @include media-dv(tab) {
-    display: block;
+// 브라우저 크기별 레이아웃 보이기(노출 여부)
+
+// 모바일
+.mb-hide {
+  @include mobile {
+    display: none !important;
   }
 }
 
-.is-tab-hide {
-  @include media-dv(tab) {
-    display: none;
+.mb-show {
+  display: none !important;
+
+  @include mobile {
+    display: block !important;
   }
 }
 
-.is-mo-show {
-  display: none;
-  @include media-dv(mb) {
-    display: block;
+.mb-show-flex {
+  display: none !important;
+
+  @include mobile {
+    display: flex !important;
   }
 }
 
-.is-mo-hide {
-  @include media-dv(mb) {
-    display: none;
+.mb-show-ib {
+  display: none !important;
+
+  @include mobile {
+    display: inline-block !important;
   }
 }
 
-.is-mo-sm-show {
-  display: none;
+// 태블릿
+.tab-hide {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.tab-show {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+}
+
+.tab-show-flex {
+  display: none !important;
+
+  @include tablet {
+    display: flex !important;
+  }
+}
+
+.tab-show-ib {
+  display: none !important;
+
+  @include tablet {
+    display: inline-block !important;
+  }
+}
+
+// 360px
+.sm-hide {
   @include media(360px) {
-    display: block;
+    display: none !important;
   }
 }
 
-.is-mo-sm-hide {
+.sm-show {
+  display: none !important;
+
   @include media(360px) {
-    display: none;
+    display: block !important;
   }
 }
 
-.is-mo-xsm-show {
-  display: none;
-  @include media(320px) {
-    display: block;
+.sm-show-flex {
+  display: none !important;
+
+  @include media(360px) {
+    display: flex !important;
   }
 }
 
-.is-mo-xsm-hide {
+.sm-show-ib {
+  display: none !important;
+
+  @include media(360px) {
+    display: inline-block !important;
+  }
+}
+
+// 320px
+.xsm-hide {
   @include media(320px) {
-    display: none;
+    display: none !important;
+  }
+}
+
+.xsm-show {
+  display: none !important;
+
+  @include media(320px) {
+    display: block !important;
+  }
+}
+
+.xsm-show-flex {
+  display: none !important;
+
+  @include media(320px) {
+    display: flex !important;
+  }
+}
+
+.xsm-show-ib {
+  display: none !important;
+
+  @include media(320px) {
+    display: inline-block !important;
   }
 }
 

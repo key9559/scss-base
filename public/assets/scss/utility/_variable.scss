@@ -36,8 +36,11 @@ $breakpoints: (
   ),
 );
 
-// button & badge
+// 높이, 넓이
+$gnb-height: 100px;
+$m-gnb-height: 50px;
 
+// button & badge
 // btn 높이 추가하면 .btn-ht-크기 가 추가된다.
 $btn-height: (
   sm: 30,
