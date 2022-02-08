@@ -79,7 +79,7 @@
   @content;
 }
 
-@mixin flex-btw {
+@mixin flex-btw($d: flex) {
   display: $d;
   @include flex-op(center, space-between);
 

@@ -1,6 +1,5 @@
 /* =================== layout =================== */
-#app,
-.wrap {
+#app {
   min-height: 100%;
 }
 
@@ -12,6 +11,11 @@
   max-width: 1080px;
   width: 95%;
   margin: 0 auto;
+}
+
+// common
+.flex-btw-wrap {
+  @include flex-btw;
 }
 
 // empty content
