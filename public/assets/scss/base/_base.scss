@@ -13,6 +13,21 @@
   word-break: break-all;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
@@ -41,6 +56,11 @@ dl {
 
 select {
   padding: 5px 10px;
+}
+
+/* ie 화살표 제거 */
+select::-ms-expand {
+  display: none;
 }
 
 address {
