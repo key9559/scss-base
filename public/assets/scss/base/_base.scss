@@ -1,5 +1,7 @@
 /* =================== base =================== */
-html, body, [class] {
+html,
+body,
+[class] {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,28 +12,28 @@ html, body, [class] {
   font: inherit;
   font-family: "helvatica", "noto", "spoqa", sans-serif;
   letter-spacing: -0.04em;
-  word-break: break-all;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   display: block;
+// }
 
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  word-break: keep-all;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -74,4 +76,10 @@ address {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Reset img */
+img {
+  max-width: 100%;
+  height: auto;
 }
