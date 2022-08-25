@@ -114,6 +114,20 @@
   }
 }
 
+@mixin make-virtual($c: "", $d: block) {
+  &:before {
+    content: $c;
+    display: $d;
+    @content;
+  }
+
+  &:after {
+    content: $c;
+    display: $d;
+    @content;
+  }
+}
+
 // ie
 @mixin ie-style {
   @at-root html.ie & {
