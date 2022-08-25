@@ -39,5 +39,3 @@ $base-size: 16;
 @function em($target, $context: $base-size) {
   @return $target / $context * 1em;
 }
-
-// ex: @include cem(16, 30);
