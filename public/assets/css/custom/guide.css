@@ -31,7 +31,6 @@
 .list-wrap {
   border: 1px solid #cdcdcd;
 }
-
 .list-wrap .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,16 +44,13 @@
   padding: 0 20px;
   border-top: 1px solid #cdcdcd;
 }
-
 .list-wrap .list:first-child {
   border: 0;
 }
-
 .list-wrap .list-title {
   width: 250px;
   padding: 20px 0;
 }
-
 .list-wrap .list-desc {
   width: 100%;
   padding: 20px 10px;
@@ -74,7 +70,6 @@
 .btn-guide .list-desc {
   position: relative;
 }
-
 .btn-guide .btns-wrap-fixed {
   position: absolute;
   bottom: auto;
