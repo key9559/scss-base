@@ -96,4 +96,5 @@
 .version-ckeck-list .dec {
   display: block;
   padding-left: 50px;
+  white-space: pre-line;
 }
