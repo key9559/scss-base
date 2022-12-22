@@ -6,13 +6,13 @@ body,
   margin: 0;
   padding: 0;
   border: 0;
-  line-height: 1.15;
-  vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
+  line-height: 1.15;
   font: inherit;
   font-family: "helvatica", "noto", "spoqa", sans-serif;
+  vertical-align: baseline;
   letter-spacing: -0.04em;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -570,6 +570,7 @@ html.ie .scroll-custom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -590,19 +591,22 @@ html.ie .scroll-custom {
 }
 
 .btn {
+  padding: 0;
+  border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -620,6 +624,9 @@ html.ie .scroll-custom {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -696,8 +703,8 @@ html.ie .scroll-custom {
 }
 
 .btn-gra {
-  background: -webkit-gradient(linear, right top, left top, from(lightblue), color-stop(50%, pink), to(lightblue));
-  background: linear-gradient(to left, lightblue 0%, pink 50%, lightblue 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(lightblue), color-stop(50%, pink), to(lightblue));
+  background-image: linear-gradient(to left, lightblue 0%, pink 50%, lightblue 100%);
   background-size: 200%;
   background-position: left top;
   color: white;
@@ -811,13 +818,13 @@ html.ie .scroll-custom {
 }
 
 .btn-icon {
+  padding: 0;
+  border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -834,13 +841,13 @@ html.ie .scroll-custom {
 }
 
 .input {
+  padding: 0;
+  border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -941,6 +948,7 @@ html.ie .scroll-custom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1029,6 +1037,7 @@ html.ie .scroll-custom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1037,13 +1046,13 @@ html.ie .scroll-custom {
           justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 0;
+  border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;

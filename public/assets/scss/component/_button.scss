@@ -1,14 +1,14 @@
 /* =================== button =================== */
 // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
 .btns-wrap {
-  @include flex {
-    align-items: center;
+  @include flex-op(center) {
     flex-wrap: wrap;
   }
 
   .btn {
     margin: 10px 0;
     margin-left: 10px;
+
     &:first-of-type {
       margin-left: 0px;
     }
@@ -16,9 +16,7 @@
 }
 
 .btns-wrap-double {
-  @include flex {
-    align-items: center;
-  }
+  @include flex-op(center);
 
   .btn {
     width: 50%;
@@ -75,7 +73,8 @@
 }
 
 // 버튼 높이
-@each $name, $height in $btn-height {
+@each $name,
+$height in $btn-height {
   .btn-#{$name} {
     height: $height + px;
   }
@@ -86,7 +85,8 @@
 }
 
 // 버튼 색
-@each $name, $color in $btn-color {
+@each $name,
+$color in $btn-color {
   .btn-#{$name} {
     background-color: $color;
     color: color(text); // 어두운배경 따로 color: white지정하기
@@ -104,7 +104,8 @@
 }
 
 // 라인 버튼 색
-@each $name, $color in $btn-color {
+@each $name,
+$color in $btn-color {
   .btn-bd-#{$name} {
     border: 1px solid $color;
     background-color: white;
@@ -119,7 +120,8 @@
 }
 
 // 고스트 버튼 색(배경색을 상속받아옴)
-@each $name, $color in $btn-color {
+@each $name,
+$color in $btn-color {
   .btn-gst-#{$name} {
     border: 1px solid $color;
     color: $color;
@@ -135,6 +137,7 @@
 // 소셜 버튼
 .socail-btn-wrap {
   flex-wrap: wrap;
+
   .btn {
     margin: 0;
   }
@@ -144,7 +147,8 @@
   justify-content: center;
 }
 
-@each $name, $color in $socail {
+@each $name,
+$color in $socail {
   .btn-#{$name} {
     background-color: $color;
     color: #ffffff;

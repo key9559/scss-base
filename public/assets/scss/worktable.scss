@@ -9,9 +9,8 @@
 }
 
 .flex-btw-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-op(center, space-between);
+
   font-size: 18px;
   color: blue;
 }

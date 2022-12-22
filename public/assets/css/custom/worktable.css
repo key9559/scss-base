@@ -6,12 +6,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 18px;
   color: blue;
 }
@@ -85,6 +85,7 @@
 
 .version-ckeck-list {
   position: relative;
+  margin-top: 8px;
 }
 .version-ckeck-list .ver {
   position: absolute;

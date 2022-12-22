@@ -56,20 +56,17 @@
 }
 
 // flex items
-@mixin flex($d: flex) {
-  display: $d;
-  @content;
-}
-
 @mixin flex-col($d: flex) {
   display: $d;
   flex-direction: column;
   @content;
 }
 
-@mixin flex-op($ai: null, $jc: null) {
+@mixin flex-op($ai: null, $jc: null, $d: flex) {
+  display: $d;
   align-items: $ai;
   justify-content: $jc;
+  @content;
 }
 
 @mixin flex-center($d: flex) {
@@ -87,8 +84,8 @@
 }
 
 // background image
-@mixin bg-url($path, $img) {
-  background-image: urlPath($path, $img);
+@mixin bg-url($path, $img){
+background-image: urlPath($path, $img);
 }
 
 @mixin bg-op($p: center, $s: auto, $r: no-repeat) {
@@ -102,6 +99,7 @@
   &:before {
     content: $c;
     display: $d;
+
     @content;
   }
 }
@@ -110,6 +108,7 @@
   &:after {
     content: $c;
     display: $d;
+
     @content;
   }
 }
@@ -118,12 +117,14 @@
   &:before {
     content: $c;
     display: $d;
+
     @content;
   }
 
   &:after {
     content: $c;
     display: $d;
+
     @content;
   }
 }
@@ -137,18 +138,19 @@
 
 // input
 @mixin input-reset {
+  padding: 0;
+  border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0;
   outline: none;
   box-shadow: none;
 }
 
 @mixin hover {
+
   &:hover,
   &:focus {
     @content;
@@ -160,8 +162,8 @@
   overflow: hidden;
   display: block;
   display: -webkit-box;
-  line-height: $line-height; // $line-height : line-height값 (단위 필수)
   height: $line-height * $line-cnt;
+  line-height: $line-height; // $line-height : line-height값 (단위 필수)
   -webkit-line-clamp: $line-cnt; // $line-cnt : 라인 수
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -170,15 +172,16 @@
 
 @mixin remove-ellipse {
   overflow: visible;
-  text-overflow: unset;
   height: auto;
   line-height: 1.4;
   -webkit-line-clamp: unset; // $line-cnt : 라인 수
   -webkit-box-orient: unset;
+  text-overflow: unset;
 }
 
 // iphone notch
 @mixin notch {
+
   /* iPhone XS : 2436x1125px at 458ppi */
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     @content;
@@ -196,21 +199,22 @@
 }
 
 // gradient
-@mixin gra(
-  $deg: to left,
+@mixin gra($deg: to left,
   $start: color(main),
   $st-per: 0%,
   $end: color(sub),
-  $e-per: 100%
-) {
+  $e-per: 100%) {
   background: linear-gradient($deg, $start $st-per, $end $e-per);
   color: white;
 }
 
 @mixin btn-gra($deg: to left, $start: color(main), $end: color(sub)) {
-  background: linear-gradient($deg, $start 0%, $end 50%, $start 100%);
-  background-size: 200%;
-  background-position: left top;
+  background: {
+    image: linear-gradient($deg, $start 0%, $end 50%, $start 100%);
+    size: 200%;
+    position: left top;
+  }
+
   color: white;
   transition: all 0.3s;
 
