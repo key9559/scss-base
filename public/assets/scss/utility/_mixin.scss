@@ -89,9 +89,9 @@ background-image: urlPath($path, $img);
 }
 
 @mixin bg-op($p: center, $s: auto, $r: no-repeat) {
+  background-repeat: $r;
   background-position: $p;
   background-size: $s;
-  background-repeat: $r;
 }
 
 // bafore, after
