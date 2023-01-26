@@ -1,14 +1,10 @@
 /* =================== layout =================== */
-#app {
-  min-height: 100%;
-}
-
 #page {
   min-height: 100%;
 }
 
 .l-center {
-  max-width: 1080px;
+  max-width: $container;
   width: 95%;
   margin: 0 auto;
 }
@@ -24,7 +20,7 @@
   text-align: center;
   padding: 50px 0;
 
-  &__img-box {
+  .img-wrap {
     width: 100px;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -34,7 +30,7 @@
     }
   }
 
-  &__txt {
+  .txt {
     font-weight: 400;
     color: color(text);
     opacity: 0.8;

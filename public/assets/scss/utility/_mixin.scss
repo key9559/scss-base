@@ -1,18 +1,6 @@
 // responsive Setting
-@mixin media-dv($device, $range: max) {
-  @media all and (#{$range}-width: device($device, "key")) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @include media-dv(tab) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @include media-dv(mb) {
+@mixin media-size($size, $range: max) {
+  @media all and (#{$range}-width: media($size)) {
     @content;
   }
 }
@@ -25,7 +13,7 @@
 }
 
 // position: absolute
-@mixin absolute($t: 0, $l: 0, $b: null, $r: null) {
+@mixin absolute($t: 0, $l: null, $b: null, $r: null) {
   position: absolute;
 
   @if $t {
@@ -56,14 +44,18 @@
 }
 
 // flex items
+@mixin flex($d: flex) {
+  display: $d;
+  @content;
+}
+
 @mixin flex-col($d: flex) {
   display: $d;
   flex-direction: column;
   @content;
 }
 
-@mixin flex-op($ai: null, $jc: null, $d: flex) {
-  display: $d;
+@mixin flex-op($ai: null, $jc: null) {
   align-items: $ai;
   justify-content: $jc;
   @content;
@@ -125,13 +117,6 @@ background-image: urlPath($path, $img);
     content: $c;
     display: $d;
 
-    @content;
-  }
-}
-
-// ie
-@mixin ie-style {
-  @at-root html.ie & {
     @content;
   }
 }
@@ -224,22 +209,16 @@ background-image: urlPath($path, $img);
 }
 
 // scroll custom style
-@mixin custom-scroll($c: null, $sub-c: #fff, $r: 0, $w: 4px) {
+@mixin custom-scroll($c: null, $sub-c: #fff, $r: 0, $s: 4px) {
   &::-webkit-scrollbar {
-    width: $w;
-    height: 4px;
-    background-color: $sub-c;
+    width: $s;
+    height: $s;
+    background-color: $c;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $c;
+    background-color: $sub-c;
     border-radius: $r;
-  }
-
-  @include ie-style {
-    scrollbar-arrow-color: $c;
-    scrollbar-face-color: $c;
-    scrollbar-track-color: $sub-c;
   }
 }
 

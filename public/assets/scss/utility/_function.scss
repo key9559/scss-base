@@ -9,7 +9,7 @@
 }
 
 @function urlPath($pathName, $img) {
-  @return url(path($pathName) + $img);
+  @return url(path($pathName)+$img);
 }
 
 // z Index setting
@@ -18,16 +18,8 @@
 }
 
 // responsive setting
-@function device($device, $arg) {
-  $device-value: map-get($breakpoints, $device);
-  $device-px: map-keys($device-value);
-  $device-desc: map-values($device-value);
-
-  @if ($arg == "key") {
-    @return $device-px;
-  } @else if($arg == "value") {
-    @return $device-desc;
-  }
+@function media($size) {
+  @return map-get($media-set, $size);
 }
 
 $base-size: 16;

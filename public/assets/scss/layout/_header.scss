@@ -2,7 +2,7 @@
 .header-wrap {
   height: $gnb-height;
 
-  @include tablet {
+  @include media-size(tab) {
     height: $m-gnb-height;
   }
 }
@@ -21,14 +21,14 @@
     min-width: 1px;
   }
 
-  @include tablet {
+  @include media-size(tab) {
     height: $m-gnb-height;
   }
 
   .flex-btw-wrap {
     height: $gnb-height;
 
-    @include tablet {
+    @include media-size(tab) {
       height: $m-gnb-height;
     }
   }
@@ -36,16 +36,17 @@
 
 // gnb style
 .pc-nav-wrap {
-  @include tablet {
+  @include media-size(tab) {
     display: none;
   }
 }
+
 .mb-nav-wrap {
   display: none;
   width: 50px;
   height: 50px;
 
-  @include tablet {
+  @include media-size(tab) {
     display: block;
   }
 }
@@ -54,6 +55,7 @@
   @include flex-col {
     @include flex-op(flex-end, center);
   }
+
   @include full;
   @include input-reset;
 
@@ -79,7 +81,7 @@
       }
     }
 
-    ~ .gnb-menu-wrap {
+    ~.gnb-menu-wrap {
       right: 0;
     }
   }

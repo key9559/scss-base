@@ -14,47 +14,24 @@
   color: transparent;
 }
 
-// 영어, 숫자만 있는 콘텐츠
-.ls-0 {
-  letter-spacing: 0;
+// flexible content wrap
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// scroll custom element에 height 지정 필수
+.scroll-custom {
+  overflow-y: auto;
+
+  @include custom-scroll($c: color(main));
 }
 
 // 브라우저 크기별 레이아웃 보이기(노출 여부)
-
-// 모바일
-.mb-hide {
-  @include mobile {
-    display: none !important;
-  }
-}
-
-.mb-show {
-  display: none !important;
-
-  @include mobile {
-    display: block !important;
-  }
-}
-
-.mb-show-flex {
-  display: none !important;
-
-  @include mobile {
-    display: flex !important;
-  }
-}
-
-.mb-show-ib {
-  display: none !important;
-
-  @include mobile {
-    display: inline-block !important;
-  }
-}
-
 // 태블릿
 .tab-hide {
-  @include tablet {
+  @include media-size(tab) {
     display: none !important;
   }
 }
@@ -62,7 +39,7 @@
 .tab-show {
   display: none !important;
 
-  @include tablet {
+  @include media-size(tab) {
     display: block !important;
   }
 }
@@ -70,16 +47,31 @@
 .tab-show-flex {
   display: none !important;
 
-  @include tablet {
+  @include media-size(tab) {
     display: flex !important;
   }
 }
 
-.tab-show-ib {
+// 모바일
+.mb-hide {
+  @include media-size(sm) {
+    display: none !important;
+  }
+}
+
+.mb-show {
   display: none !important;
 
-  @include tablet {
-    display: inline-block !important;
+  @include media-size(sm) {
+    display: block !important;
+  }
+}
+
+.mb-show-flex {
+  display: none !important;
+
+  @include media-size(sm) {
+    display: flex !important;
   }
 }
 
@@ -103,70 +95,5 @@
 
   @include media(360px) {
     display: flex !important;
-  }
-}
-
-.sm-show-ib {
-  display: none !important;
-
-  @include media(360px) {
-    display: inline-block !important;
-  }
-}
-
-// 320px
-.xsm-hide {
-  @include media(320px) {
-    display: none !important;
-  }
-}
-
-.xsm-show {
-  display: none !important;
-
-  @include media(320px) {
-    display: block !important;
-  }
-}
-
-.xsm-show-flex {
-  display: none !important;
-
-  @include media(320px) {
-    display: flex !important;
-  }
-}
-
-.xsm-show-ib {
-  display: none !important;
-
-  @include media(320px) {
-    display: inline-block !important;
-  }
-}
-
-// flexible content wrap
-.clear:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-// scroll custom element에 height 지정 필수
-.scroll-custom {
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: color(sub);
-  }
-
-  @include ie-style {
-    scrollbar-arrow-color: color(main);
-    scrollbar-face-color: color(main);
-    scrollbar-track-color: color(sub);
   }
 }

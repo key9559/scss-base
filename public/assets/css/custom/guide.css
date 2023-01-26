@@ -5,7 +5,7 @@
 .section-title {
   padding: 10px 0;
   margin: 10px 0;
-  background-color: #cdcdcd;
+  background-color: #9999ff;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .list-wrap {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #9999ff;
 }
 .list-wrap .list {
   display: -webkit-box;
@@ -42,7 +42,7 @@
       -ms-flex-align: stretch;
           align-items: stretch;
   padding: 0 20px;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid #9999ff;
 }
 .list-wrap .list:first-child {
   border: 0;
@@ -54,7 +54,7 @@
 .list-wrap .list-desc {
   width: 100%;
   padding: 20px 10px;
-  border-left: 1px solid #cdcdcd;
+  border-left: 1px solid #9999ff;
 }
 
 .show-guide .list {

@@ -1,7 +1,9 @@
 /* =================== button =================== */
 // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
 .btns-wrap {
-  @include flex-op(center) {
+  @include flex {
+    @include flex-op(center);
+
     flex-wrap: wrap;
   }
 
@@ -16,7 +18,9 @@
 }
 
 .btns-wrap-double {
-  @include flex-op(center);
+  @include flex {
+    @include flex-op(center);
+  }
 
   .btn {
     width: 50%;
